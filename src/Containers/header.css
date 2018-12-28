@@ -1,0 +1,24 @@
+.container-fluid {
+    height: 50px;
+    z-index: 20;
+}
+.leftPanel {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    height: calc( 100vh - 51px );
+    color: white;
+    width: 280px;
+    margin: 0;
+}
+
+.rightPanel {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    z-index: 10;
+    height: calc( 100vh - 51px );
+    color: white;
+    width: 280px;
+    right: 0;
+}
