@@ -1,13 +1,20 @@
 .container-fluid {
     height: 50px;
-    z-index: 20;
+    z-index: 20;    
+}
+.navbar {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: rgb(199, 199, 199);    
 }
 .leftPanel {
     background: rgba(0, 0, 0, 0.7);
     position: absolute;
     left: 0;
     z-index: 10;
-    height: calc( 100vh - 51px );
+    height: calc( 100vh - 50px );
     color: white;
     width: 280px;
     margin: 0;
@@ -17,8 +24,15 @@
     background: rgba(0, 0, 0, 0.7);
     position: absolute;
     z-index: 10;
-    height: calc( 100vh - 51px );
+    height: calc( 100vh - 50px );
     color: white;
     width: 280px;
     right: 0;
+}
+.container-app { 
+    box-sizing: border-box;
+    color: gray;   
+    z-index: 20;
+    padding: 0;
+    margin: 0;
 }

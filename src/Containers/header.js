@@ -14,7 +14,7 @@ class Header extends React.Component {
     render() {
         return (
             <div>
-            <nav className="navbar navbar-default">
+            <nav className="navbar navbar-dark">
                 <div className="container-fluid">
                     <div className="navbar-header">
                         <Link className="navbar-brand" to="/">KamilSz portfolio</Link>
@@ -34,7 +34,7 @@ class Header extends React.Component {
                     <p>Right panel</p>
                 </div>
             </nav>
-            <div className="container-fluid">
+            <div className="container-app">
                 {this.props.children}            
             </div>
         </div>
