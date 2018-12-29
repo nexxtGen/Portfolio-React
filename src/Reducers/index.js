@@ -1,9 +1,11 @@
 import { combineReducers } from 'redux';
 import portfolioReducer from './portfolio-reducer';
+import appReducer from './app-reducer';
 
-// plik w którym scalam zdefiniowane reducery (choć jest tylko jeden to jest to dobra praktyka.)
+//Plik w którym scalam zdefiniowane reducery
 const reducers = combineReducers({
-    portfolioReducer
+    portfolioReducer,
+    appReducer
 });
 
 export default reducers;
