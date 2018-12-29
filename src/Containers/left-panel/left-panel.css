@@ -1,0 +1,24 @@
+.leftPanelActive {
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    height: calc( 100vh - 50px );
+    color: white;
+    width: 280px;
+    margin: 0;
+    transition: linear 0.25s;
+    border-right: 1px solid rgb(53, 53, 53);
+}
+
+.leftPanelHidden {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: -280px;
+    z-index: 10;
+    height: calc( 100vh - 50px );
+    color: white;
+    width: 280px;
+    margin: 0;
+    transition: linear 0.25s;
+}

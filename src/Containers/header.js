@@ -6,6 +6,8 @@ import { leftPanelShow, rightPanelShow } from '../Actions/actions-app';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import './header.css';
+//import Components
+import LeftPanel from './left-panel/left-panel';
 
 class Header extends Component {
     constructor(props) {
@@ -42,9 +44,8 @@ class Header extends Component {
                         <button onClick={() => this.switchRightPanel()}>Right SHOW/HIDE</button>
                     </div>                    
                 </div>
-                <div className={this.props.leftPanelShowState ? "leftPanelActive" : "leftPanelHidden" }>
-                    <p>Left panel</p>
-                </div>
+                <LeftPanel panelShowState={this.props.leftPanelShowState}/>                    
+                
                 <div className={this.props.rightPanelShowState ? "rightPanelActive" : "rightPanelHidden" }>
                     <p>Right panel</p>
                 </div>

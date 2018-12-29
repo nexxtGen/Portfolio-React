@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
 .container {    
     padding: 0;
     margin: 0;
@@ -6,8 +8,7 @@
     background-image: url("../images/bg3.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: cover;    
     color: rgb(255, 255, 255);
 }
 
@@ -16,6 +17,6 @@
     margin: 0 auto;
 }
 p {
-    font-size: 13px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
