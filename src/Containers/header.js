@@ -22,27 +22,27 @@ class Header extends Component {
     switchRightPanel() {
         this.props.dispatch(rightPanelShow());
         console.log("righ Panel Visiblity:", this.props.leftPanelShowState);
-    }
-
-    
+    }    
 
     render() {
         return (
             <div>
-            <nav className="navbar navbar-dark">
-                <div className="container-fluid">                    
-                    <div className="navbar-header">
-                        <button onClick={() => this.switchLeftPanel()}>left SHOW/HIDE</button>
-                        <Link className="navbar-brand" to="/">KamilSz portfolio</Link>
-                    </div>
-                    <div className="collapse navbar-collapse">
-                        <ul className="nav navbar-nav">
+            <nav className="navbar-container">
+                <div className="container-fluidd"> 
+                    <div className="first-button-container">
+                        <button className="first-button" onClick={() => this.switchLeftPanel()}>SHOW/HIDE</button>                 
+                    </div>                     
+                    <div className="link-container">
+                        <ul className="link-list">
+                            <li><Link to="/">Home</Link></li>
                             <li><Link to="/personalData">Personal Data</Link></li>
                             <li><Link to="/portfolio">Portfolio</Link></li>
                             <li><Link to="/contact">Contact</Link></li>
-                        </ul>
-                        <button onClick={() => this.switchRightPanel()}>Right SHOW/HIDE</button>
-                    </div>                    
+                        </ul>                        
+                    </div>  
+                    <div className="second-button-container">
+                        <button className="second-button" onClick={() => this.switchRightPanel()}>SHOW/HIDE</button>
+                    </div>                  
                 </div>
                 <LeftPanel panelShowState={this.props.leftPanelShowState}/>                    
                 
@@ -57,8 +57,6 @@ class Header extends Component {
         );
     }
 }
-
-
 
 const mapStateToProps = function (store) {
     return {
