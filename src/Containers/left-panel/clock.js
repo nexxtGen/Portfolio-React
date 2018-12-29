@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "./clock.css";
+import moment from 'moment';
 
 class Clock extends Component{
   constructor(props) {
@@ -7,7 +8,9 @@ class Clock extends Component{
       this.state = { 
         hour: "00",
         minutes: "00",
-        amPm: "am" 
+        amPm: "am",
+        day: "Monday",
+        month: "January" 
       };
       this.getTime = this.getTime.bind(this);
   }	
@@ -24,7 +27,7 @@ class Clock extends Component{
          addZero = n => n < 10 ? "0" +  n : n;
        
   	setInterval(() => {
-    	let date, hour, minutes, actualHour, actualMinutes, amPm;
+    	let date, hour, minutes, actualHour, actualMinutes, amPm, day, month;
       
       date = new Date();
       hour = addZero(takeTwelve(date.getHours())); 
@@ -34,10 +37,14 @@ class Clock extends Component{
       
       amPm = date.getHours() >= 12 ? "PM" : "AM";
       
+      day = moment().format('dddd');
+      month = moment().format('MMMM .DD');
       this.setState({
           hour: actualHour,
           minutes: actualMinutes,         
-          amPm: amPm
+          amPm: amPm,
+          day,
+          month
       })
     }, 1000);
   }
@@ -54,6 +61,15 @@ class Clock extends Component{
           <div className="minutes">
             {this.state.minutes}            
           </div>
+          <div className="dateContainer">
+            <div className="day">
+              {this.state.day}            
+            </div>
+            <div className="month">
+              {this.state.month}            
+            </div>
+          </div>
+          <div className="line"></div>
       </div>
     );
   }

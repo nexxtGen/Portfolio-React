@@ -21,4 +21,5 @@
     width: 280px;
     margin: 0;
     transition: linear 0.25s;
+    border-right: 1px solid rgb(53, 53, 53);
 }

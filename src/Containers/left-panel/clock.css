@@ -9,7 +9,7 @@
 }
 .clock-container {
     width: 100%;
-    padding: 20px 15px;
+    padding: 20px 15px 5px 15px;    
 }
 .hour {
     color: rgb(136, 136, 136);
@@ -19,7 +19,6 @@
     line-height: 210px;
     transform: scaleY(1.3);    
 }
-
 .minutes {
     top: 140px;
     position: absolute;
@@ -27,4 +26,18 @@
     font-size: 200px;
     font-family: 'Lato', sans-serif;
     transform: scaleY(1.3);
+}
+.dateContainer {
+    box-sizing: border-box;
+    padding-left: 13px;
+    margin-top: 170px;
+    margin-left: 35px;
+    font-size: 21px;
+    border-left: 1px solid green;
+    font-family: 'Lato', sans-serif;
+    color: rgb(214, 214, 214);    
+}
+.line {
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(146, 146, 146);  
 }

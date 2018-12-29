@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Clock from './clock';
+import FieldOne from './field-one';
 import "./left-panel.css";
 
 class LeftPanel extends Component {
@@ -11,7 +12,7 @@ class LeftPanel extends Component {
         return (
             <div className={this.props.panelShowState ? "leftPanelActive" : "leftPanelHidden" }>
                 <Clock/>
-                <h1>Left Panel Component. Test</h1>
+                <FieldOne/>
             </div>
         );
     }
