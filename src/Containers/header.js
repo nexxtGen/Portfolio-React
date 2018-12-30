@@ -12,6 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUserSecret, faAddressCard, faAddressBook, faFileCode, faBars } from '@fortawesome/free-solid-svg-icons';
 //Import Components
 import LeftPanel from './left-panel/left-panel';
+import RightPanel from './right-panel/right-panel';
 library.add(faHome, faUserSecret, faAddressCard, faFileCode, faAddressBook, faBars);
 //import Components
 
@@ -95,11 +96,8 @@ class Header extends Component {
                         <button className="second-button" onClick={() => this.switchRightPanel()}><FontAwesomeIcon className="header-icon" icon="bars" /></button>
                     </div>                  
                 </div>
-                <LeftPanel panelShowState={this.props.leftPanelShowState}/>                    
-                
-                <div className={this.props.rightPanelShowState ? "rightPanelActive" : "rightPanelHidden" }>
-                    <p>Right panel</p>
-                </div>
+                <LeftPanel panelShowState={this.props.leftPanelShowState}/>
+                <RightPanel panelShowState={this.props.rightPanelShowState}/> 
             </nav>
             <div className="container-app">
                 {this.props.children}

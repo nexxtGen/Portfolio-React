@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 
 .field-container{
-    padding: 20px 15px 5px 15px; 
+    box-sizing: border-box;
+    margin: 5px 15px;
+    padding: 10px 15px 5px 15px; 
+    background: rgba(0, 0, 0, 0.2)
 }
 .text {
     font-size: 12px;

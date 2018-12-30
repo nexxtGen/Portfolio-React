@@ -1,0 +1,33 @@
+.container{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: calc( 100vh - 50px );
+    max-height: calc( 100vh - 50px );
+    background-image: url("../../images/bg3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    color: rgb(255, 255, 255);
+    overflow:auto;    
+}
+
+.personal-container {    
+    width: 1050px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    margin: 0 auto;    
+    animation: fade-in-right ease 0.9s forwards;
+}
+
+@keyframes fade-in-right {
+    from {
+      opacity: 0;
+      transform: translateX(-15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
