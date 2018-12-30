@@ -6,8 +6,15 @@ import { leftPanelShow, rightPanelShow } from '../Actions/actions-app';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import './header.css';
-//import Components
+//Font awesome
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faUserSecret, faAddressCard, faAddressBook, faFileCode, faBars } from '@fortawesome/free-solid-svg-icons';
+//Import Components
 import LeftPanel from './left-panel/left-panel';
+library.add(faHome, faUserSecret, faAddressCard, faFileCode, faAddressBook, faBars);
+//import Components
+
 
 class Header extends Component {
     constructor(props) {
@@ -29,19 +36,63 @@ class Header extends Component {
             <div>
             <nav className="navbar-container">
                 <div className="container-fluidd"> 
-                    <div className="first-button-container">
-                        <button className="first-button" onClick={() => this.switchLeftPanel()}>SHOW/HIDE</button>                 
+                    <div className="first-button-container">                        
+                        <button className="first-button" onClick={() => this.switchLeftPanel()}><FontAwesomeIcon className="header-icon" icon="bars" /></button>                 
                     </div>                     
                     <div className="link-container">
                         <ul className="link-list">
-                            <li><Link to="/">Home</Link></li>
-                            <li><Link to="/personalData">Personal Data</Link></li>
-                            <li><Link to="/portfolio">Portfolio</Link></li>
-                            <li><Link to="/contact">Contact</Link></li>
+                            <li>
+                                <Link to="/">
+                                    <div className="single-link-container">
+                                        <div className="icon-container">
+                                            <FontAwesomeIcon className="header-icon" icon="home" />
+                                        </div>
+                                        <div className="icon-text">
+                                            <p>Home<br/><span className="icon-text-span">page</span></p>                                            
+                                        </div>
+                                    </div>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/personalData">
+                                    <div className="single-link-container">
+                                        <div className="icon-container">
+                                            <FontAwesomeIcon className="header-icon" icon="address-card" />
+                                        </div>
+                                        <div className="icon-text">
+                                            <p>Personal<br/><span className="icon-text-span">Data</span></p>                                            
+                                        </div>
+                                    </div>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/portfolio">
+                                    <div className="single-link-container">
+                                        <div className="icon-container">
+                                            <FontAwesomeIcon className="header-icon" icon="file-code" />
+                                        </div>
+                                        <div className="icon-text">
+                                            <p>Portfolio<br/><span className="icon-text-span">apps</span></p>                                            
+                                        </div>
+                                    </div>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/contact">
+                                    <div className="single-link-container">
+                                        <div className="icon-container">
+                                            <FontAwesomeIcon className="header-icon" icon="address-book" />
+                                        </div>
+                                        <div className="icon-text">
+                                            <p>Contact<br/><span className="icon-text-span">Me</span></p>                                            
+                                        </div>
+                                    </div>
+                                </Link>
+                            </li>
                         </ul>                        
                     </div>  
                     <div className="second-button-container">
-                        <button className="second-button" onClick={() => this.switchRightPanel()}>SHOW/HIDE</button>
+                        <button className="second-button" onClick={() => this.switchRightPanel()}><FontAwesomeIcon className="header-icon" icon="bars" /></button>
                     </div>                  
                 </div>
                 <LeftPanel panelShowState={this.props.leftPanelShowState}/>                    
