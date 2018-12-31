@@ -1,0 +1,31 @@
+.field-personal-container {
+    padding: 15px;    
+}
+
+.first-module-container {
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+}
+
+.my-photo {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+}
+.git-icon-container{
+    margin-left: 18px;
+}
+.kamil-data p{
+    font-size: 13px;   
+    margin-bottom: 3px; 
+}
+.github-icon{
+    font-size: 25px;
+}
+.git-repo{
+    font-size: 13px;
+}

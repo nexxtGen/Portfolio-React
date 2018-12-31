@@ -9,11 +9,13 @@ import './header.css';
 //Font awesome
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faUserSecret, faAddressCard, faAddressBook, faFileCode, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faUserSecret, faAddressCard, faAddressBook, faFileCode, faBars} from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faGithubSquare} from '@fortawesome/free-brands-svg-icons';
 //Import Components
 import LeftPanel from './left-panel/left-panel';
 import RightPanel from './right-panel/right-panel';
-library.add(faHome, faUserSecret, faAddressCard, faFileCode, faAddressBook, faBars);
+//Add icons to react libary
+library.add(faHome, faUserSecret, faAddressCard, faFileCode, faAddressBook, faBars, faGithub, faGithubSquare );
 //import Components
 
 
@@ -46,7 +48,7 @@ class Header extends Component {
                                 <Link to="/">
                                     <div className="single-link-container">
                                         <div className="icon-container">
-                                            <FontAwesomeIcon className="header-icon" icon="home" />
+                                            <FontAwesomeIcon className="header-icon" icon={faHome} />
                                         </div>
                                         <div className="icon-text">
                                             <p>Home<br/><span className="icon-text-span">page</span></p>                                            

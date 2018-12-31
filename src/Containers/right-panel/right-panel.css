@@ -6,7 +6,9 @@
     color: white;
     width: 280px;
     right: 0;
-    transition: linear 0.25s;    
+    transition: linear 0.25s; 
+    border-left: 1px solid rgb(53, 53, 53);
+    overflow: auto;   
 }
 
 .rightPanelHidden {
@@ -18,5 +20,7 @@
     color: white;
     width: 280px;
     right: -280px;
-    transition: linear 0.25s;    
+    transition: linear 0.25s;   
+    border-left: 1px solid rgb(53, 53, 53);
+    overflow: auto;   
 }
