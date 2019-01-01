@@ -1,0 +1,20 @@
+.search-bar {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.search-bar-input {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+    max-width: 140px;
+}
+.submit-button {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+}
+.SearchBar .message {
+  width: 20rem;
+  margin: 0 auto 2rem;
+  animation: fadeInDown 1s;
+}
+

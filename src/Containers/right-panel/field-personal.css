@@ -1,5 +1,5 @@
 .field-personal-container {
-    padding: 15px;    
+    padding: 15px;      
 }
 
 .first-module-container {
@@ -8,6 +8,10 @@
     display: flex;
     flex-direction: row;
 }
+.first-module-container:hover {
+    transition: 0.2s linear;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
 
 .my-photo {
     border-radius: 50%;
@@ -15,17 +19,57 @@
     height: 70px;
     border: 1px solid rgb(255, 255, 255);
     padding: 5px;
+    transition: 0.5s linear;
 }
-.git-icon-container{
-    margin-left: 18px;
+.my-photo:hover {
+    transform: scale(1.1);
+    transition: 0.3s linear;
+}
+.kamil-data-container{    
+    margin-left: 10px;
+    padding-left: 8px;
+    border-left: 1px solid white;
 }
 .kamil-data p{
     font-size: 13px;   
     margin-bottom: 3px; 
+    line-height: 20px;
 }
-.github-icon{
-    font-size: 25px;
+/* Section 2*/
+.fp-icon-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    width: 100%;    
+    background: rgba(0, 0, 0, 0.3);
+    padding: 8px;    
+    margin-bottom: 15px;    
 }
-.git-repo{
-    font-size: 13px;
+.fp-icon-container:hover{
+    transition: 0.2s linear;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+.fp-icon{    
+    font-size: 25px;     
+    margin-left: 15px; 
+}
+.fp-icon-container p {
+    margin-bottom: 0;
+}
+.fp-button {
+    background: none;
+    margin-left: 15px;
+    outline: none;
+    border: 1px solid white;
+}
+.fp-link-to-personal-data{
+    text-decoration: none;
+    color: white;
+}
+.fp-link-to-personal-data:hover{
+    text-decoration: none;
+    color: white;
+}
+.fp-divided-line{
+    border-bottom: 1px solid rgb(170, 170, 170);
 }

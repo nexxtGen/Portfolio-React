@@ -10,12 +10,11 @@ import './header.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUserSecret, faAddressCard, faAddressBook, faFileCode, faBars} from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faGithubSquare} from '@fortawesome/free-brands-svg-icons';
 //Import Components
 import LeftPanel from './left-panel/left-panel';
 import RightPanel from './right-panel/right-panel';
 //Add icons to react libary
-library.add(faHome, faUserSecret, faAddressCard, faFileCode, faAddressBook, faBars, faGithub, faGithubSquare );
+library.add(faHome, faUserSecret, faAddressCard, faFileCode, faAddressBook, faBars);
 //import Components
 
 
