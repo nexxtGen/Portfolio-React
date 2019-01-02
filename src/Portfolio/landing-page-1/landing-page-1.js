@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from './prod-assets/style.css';
+import styleLanding1 from './prod-assets/style-landing-1.css';
 import CSSModules from 'react-css-modules';
 //import images
 import icon_1 from './images/icons/icon-1.jpg';
@@ -16,12 +16,13 @@ import about_5 from './images/about/about-5.jpg';
 import team_1 from './images/team/team-1.jpg';
 import team_2 from './images/team/team-2.jpg';
 import team_3 from './images/team/team-3.jpg';
+import logoLp1 from './images/logo-lp1.png';
 //import CSSModules from 'react-css-modules';
 
 class Landing1 extends Component{
     render() {
       return (        
-        <div>
+        <div className="landing-page-1-container">
           <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&subset=latin-ext" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&subset=latin-ext" rel="stylesheet" />
           <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossOrigin="anonymous" />
@@ -30,37 +31,37 @@ class Landing1 extends Component{
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
           <title>Golden</title>
           <link rel="stylesheet" href="prod-assets/style.css" />    
-          <header className="t-site-header u-bg-dark">
+          <header className="t-site-header-lp1 u-bg-dark">
             <div className="o-container">
               <div className="t-site-header__top">
                 <div className="o-row o-row--center-y">
                   <div className="o-col o-col--md3">
-                    <a href="#"> <img src="images/logo.png" alt="logo" /></a>
+                    <a href="#"> <img src={logoLp1} alt="logo" /></a>
                   </div>
                   <div className="o-col o-col--md9 t-site-header__menu">
                     <nav className="c-nav">
-                      <a href="#" className="c-nav__item c-nav__item--underline-hover">Home</a>
-                      <a href="#" className="c-nav__item c-nav__item--underline-hover">Services</a>
-                      <a href="#" className="c-nav__item c-nav__item--underline-hover">Portfolio</a>
-                      <a href="#" className="c-nav__item c-nav__item--underline-hover">About</a>
-                      <a href="#" className="c-nav__item c-nav__item--underline-hover">Contact</a>
+                      <a href="#" className="c-nav__item-lp1 c-nav__item--underline-hover-lp1">Home</a>
+                      <a href="#" className="c-nav__item-lp1 c-nav__item--underline-hover-lp1">Services</a>
+                      <a href="#" className="c-nav__item-lp1 c-nav__item--underline-hover-lp1">Portfolio</a>
+                      <a href="#" className="c-nav__item-lp1 c-nav__item--underline-hover-lp1">About</a>
+                      <a href="#" className="c-nav__item-lp1 c-nav__item--underline-hover-lp1">Contact</a>
                     </nav>
                   </div>
                 </div>                
               </div> 
               <div className="t-site-header__hero u-text-center">
-                <h2 className="c-heading c-heading--white t-site-header__intro-text u-mb-3">Welcome To Our Studio!</h2>
-                <h1 className="c-heading c-heading--level0 c-heading--white c-heading--upper u-mb-3">It's nice to meet You</h1>
-                <a href="#" className="c-btn c-btn--primary">Tell me more</a>
+                <h2 className="c-heading-lp1 c-heading-lp1--white t-site-header__intro-text-lp1 u-mb-3">Welcome To Our Studio!</h2>
+                <h1 className="c-heading-lp1 c-heading-lp1--level0 c-heading-lp1--white c-heading-lp1--upper u-mb-3">It's nice to meet You</h1>
+                <a href="#" className="c-btn-lp1 c-btn--primary-lp1">Tell me more</a>
               </div>
             </div>
           </header>  
-          <section className="t-services">
+          <section className="t-services-1">
             <div className="o-container">
               <div className="o-row o-row--center-y">
                 <div className="o-col u-mb-6">
                   <div className="t-services__header">                    
-                    <h1 className="c-heading c-heading--level1 c-heading--upper">Services</h1>
+                    <h1 className="c-heading-lp1 c-heading-lp1--level1 c-heading-lp1--upper">Services</h1>
                     <p className="u-text-italic">Proin iaculis purus consequat sem cure</p>
                   </div>                    
                 </div>
@@ -71,8 +72,8 @@ class Landing1 extends Component{
                     <div className="c-icon-box__image">
                       <img className="c-icon-box__icon" src={icon_1} alt />
                     </div>
-                    <h4 className="c-heading--level2">E-Commerce</h4>
-                    <p className="c-icon-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto temporibus, libero nobis aliquam minus magnam nihil illo totam accusamus costamtos ala.</p>                        
+                    <h4 className="c-heading-lp1--level2">E-Commerce</h4>
+                    <p className="c-icon-box__text-lp1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto temporibus, libero nobis aliquam minus magnam nihil illo totam accusamus costamtos ala.</p>                        
                   </div>
                 </div>
                 <div className="o-col o-col--md4">
@@ -80,8 +81,8 @@ class Landing1 extends Component{
                     <div className="c-icon-box__image">
                       <img className="c-icon-box__icon" src={icon_2} alt />
                     </div>
-                    <h4 className="c-heading--level2">Responsive Web</h4>
-                    <p className="c-icon-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto temporibus, libero nobis aliquam minus magnam nihil illo totam accusamus costamtos ala.</p>                        
+                    <h4 className="c-heading-lp1--level2">Responsive Web</h4>
+                    <p className="c-icon-box__text-lp1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto temporibus, libero nobis aliquam minus magnam nihil illo totam accusamus costamtos ala.</p>                        
                   </div>
                 </div>
                 <div className="o-col o-col--md4">
@@ -89,8 +90,8 @@ class Landing1 extends Component{
                     <div className="c-icon-box__image">
                       <img className="c-icon-box__icon" src={icon_3} alt />
                     </div>
-                    <h4 className="c-heading--level2">Web Security</h4>
-                    <p className="c-icon-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto temporibus, libero nobis aliquam minus magnam nihil illo totam accusamus costamtos ala.</p>                        
+                    <h4 className="c-heading-lp1--level2">Web Security</h4>
+                    <p className="c-icon-box__text-lp1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto temporibus, libero nobis aliquam minus magnam nihil illo totam accusamus costamtos ala.</p>                        
                   </div>
                 </div>
               </div>
@@ -101,7 +102,7 @@ class Landing1 extends Component{
               <div className="o-row o-row--center-y">
                 <div className="o-col u-mb-6">
                   <div className="t-services__header">                    
-                    <h1 className="c-heading c-heading--level1 c-heading--upper">Our Portfolio</h1>
+                    <h1 className="c-heading-lp1 c-heading-lp1--level1 c-heading-lp1--upper">Our Portfolio</h1>
                     <p className="u-text-italic">Proin iaculis purus consequat sem cure</p>
                   </div>                    
                 </div>
@@ -112,8 +113,8 @@ class Landing1 extends Component{
                     <div className="c-portfolio-box__image u-mb-2">
                       <img className="c-portfolio-box__icon" src={portfolio_1} alt />
                     </div>
-                    <h4 className="c-heading--level2">Ebony &amp; Ivory</h4>
-                    <p className="c-portfolio-box__text">Branding</p>                        
+                    <h4 className="c-heading-lp1--level2">Ebony &amp; Ivory</h4>
+                    <p className="c-portfolio-box__text-lp1">Branding</p>                        
                   </div>
                 </div>
                 <div className="o-col o-col--md4">
@@ -121,8 +122,8 @@ class Landing1 extends Component{
                     <div className="c-portfolio-box__image u-mb-2">
                       <img className="c-portfolio-box__icon" src={portfolio_2} alt />
                     </div>
-                    <h4 className="c-heading--level2">Branding</h4>
-                    <p className="c-portfolio-box__text">Print Design</p>                        
+                    <h4 className="c-heading-lp1--level2">Branding</h4>
+                    <p className="c-portfolio-box__text-lp1">Print Design</p>                        
                   </div>
                 </div>
                 <div className="o-col o-col--md4">
@@ -130,8 +131,8 @@ class Landing1 extends Component{
                     <div className="c-portfolio-box__image u-mb-2">
                       <img className="c-portfolio-box__icon" src={portfolio_3} alt />
                     </div>
-                    <h4 className="c-heading--level2">Clever Poster</h4>
-                    <p className="c-portfolio-box__text">Print Design</p>                        
+                    <h4 className="c-heading-lp1--level2">Clever Poster</h4>
+                    <p className="c-portfolio-box__text-lp1">Print Design</p>                        
                   </div>
                 </div>
               </div>
@@ -141,8 +142,8 @@ class Landing1 extends Component{
                     <div className="c-portfolio-box__image u-mb-2">
                       <img className="c-portfolio-box__icon" src={portfolio_3} alt />
                     </div>
-                    <h4 className="c-heading--level2">Ebony &amp; Ivory</h4>
-                    <p className="c-portfolio-box__text">Branding</p>                        
+                    <h4 className="c-heading-lp1--level2">Ebony &amp; Ivory</h4>
+                    <p className="c-portfolio-box__text-lp1">Branding</p>                        
                   </div>
                 </div>
                 <div className="o-col o-col--md4">
@@ -150,8 +151,8 @@ class Landing1 extends Component{
                     <div className="c-portfolio-box__image u-mb-2">
                       <img className="c-portfolio-box__icon" src={portfolio_2} alt />
                     </div>
-                    <h4 className="c-heading--level2">Branding</h4>
-                    <p className="c-portfolio-box__text">Print Design</p>                        
+                    <h4 className="c-heading-lp1--level2">Branding</h4>
+                    <p className="c-portfolio-box__text-lp1">Print Design</p>                        
                   </div>
                 </div>
                 <div className="o-col o-col--md4">
@@ -159,8 +160,8 @@ class Landing1 extends Component{
                     <div className="c-portfolio-box__image u-mb-2">
                       <img className="c-portfolio-box__icon" src={portfolio_2} alt />
                     </div>
-                    <h4 className="c-heading--level2">Clever Poster</h4>
-                    <p className="c-portfolio-box__text">Print Design</p>                        
+                    <h4 className="c-heading-lp1--level2">Clever Poster</h4>
+                    <p className="c-portfolio-box__text-lp1">Print Design</p>                        
                   </div>
                 </div>
               </div>
@@ -171,15 +172,15 @@ class Landing1 extends Component{
               <div className="o-row ">
                 <div className="o-col o-col--md12 u-mb-6">
                   <div className="t-about__header">                    
-                    <h1 className="c-heading c-heading--level1 c-heading--upper">About Us</h1>
+                    <h1 className="c-heading-lp1 c-heading-lp1--level1 c-heading-lp1--upper">About Us</h1>
                     <p className="u-text-italic">Proin iaculis purus consequat sem cure</p>
                   </div>                    
                 </div>
               </div>
               <div className="o-row o-col o-col--md12 t-about__row">  
                 <div className="t-about__content o-col o-col--md6 o-col--lg4">                    
-                  <h1 className="c-heading c-heading--level3 c-heading--upper">July 2010</h1>
-                  <h1 className="c-heading c-heading--level3 ">Our Humble Beginnins</h1>
+                  <h1 className="c-heading-lp1 c-heading-lp1--level3 c-heading-lp1--upper">July 2010</h1>
+                  <h1 className="c-heading-lp1 c-heading-lp1--level3 ">Our Humble Beginnins</h1>
                   <p className="t-about__text">Proin iaculis purus consequat sem cure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium quaerat deserunt optio facilis minima possimus reiciendis repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                 </div>                                  
                 <div className="o-col o-col--md4 t-about__image">
@@ -191,15 +192,15 @@ class Landing1 extends Component{
                   <img className="t-about__item" src={about_2} alt="About" />
                 </div>
                 <div className="t-about__content--rev o-col--md4">                    
-                  <h1 className="c-heading c-heading--level3 c-heading--upper">January 2011</h1>
-                  <h1 className="c-heading c-heading--level3 ">Facing Startup battles</h1>
+                  <h1 className="c-heading-lp1 c-heading-lp1--level3 c-heading-lp1--upper">January 2011</h1>
+                  <h1 className="c-heading-lp1 c-heading-lp1--level3 ">Facing Startup battles</h1>
                   <p className="t-about__text">Proin iaculis purus consequat sem cure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium quaerat deserunt optio facilis minima possimus reiciendis repudiandae. </p>
                 </div>  
               </div>
               <div className="o-row o-col o-col--md12 t-about__row">  
                 <div className="t-about__content o-col o-col--md6 o-col--lg4">                    
-                  <h1 className="c-heading c-heading--level3 c-heading--upper">July 2010</h1>
-                  <h1 className="c-heading c-heading--level3 ">Our Humble Beginnins</h1>
+                  <h1 className="c-heading-lp1 c-heading-lp1--level3 c-heading-lp1--upper">July 2010</h1>
+                  <h1 className="c-heading-lp1 c-heading-lp1--level3 ">Our Humble Beginnins</h1>
                   <p className="t-about__text">Proin iaculis purus consequat sem cure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium quaerat deserunt optio facilis minima possimus reiciendis repudiandae. </p>
                 </div>                                  
                 <div className="o-col o-col--md4 t-about__image">
@@ -211,8 +212,8 @@ class Landing1 extends Component{
                   <img className="t-about__item" src={about_4} alt="About" />
                 </div>
                 <div className="t-about__content--rev o-col--md4">                    
-                  <h1 className="c-heading c-heading--level3 c-heading--upper">January 2011</h1>
-                  <h1 className="c-heading c-heading--level3 ">Facing Startup battles</h1>
+                  <h1 className="c-heading-lp1 c-heading-lp1--level3 c-heading-lp1--upper">January 2011</h1>
+                  <h1 className="c-heading-lp1 c-heading-lp1--level3 ">Facing Startup battles</h1>
                   <p className="t-about__text">Proin iaculis purus consequat sem cure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium quaerat deserunt optio facilis minima possimus reiciendis repudiandae. </p>
                 </div>  
               </div>
@@ -225,12 +226,12 @@ class Landing1 extends Component{
               </div>
             </div>
           </section>
-          <section className="t-team">
+          <section className="t-team-1">
             <div className="o-container">
               <div className="o-row ">
                 <div className="o-col o-col--md12 u-mb-6">
                   <div className="t-about__header">                    
-                    <h1 className="c-heading c-heading--level1 c-heading--upper">Our Amazing team</h1>
+                    <h1 className="c-heading-lp1 c-heading-lp1--level1 c-heading-lp1--upper">Our Amazing team</h1>
                     <p className="u-text-italic">Proin iaculis purus consequat sem cure</p>
                   </div>                    
                 </div>
@@ -240,7 +241,7 @@ class Landing1 extends Component{
                   <div className="t-team__image">                    
                     <img className="t-team__icon" src={team_1} alt />
                   </div>
-                  <h4 className="c-heading--level2">Hans Urlich</h4>
+                  <h4 className="c-heading-lp1--level2">Hans Urlich</h4>
                   <p className="t-team__text">Marketer</p>
                   <div className="social">			
                     <button className="ic-btn b-tw">
@@ -258,7 +259,7 @@ class Landing1 extends Component{
                   <div className="t-team__image">                    
                     <img className="t-team__icon" src={team_2} alt />
                   </div>
-                  <h4 className="c-heading--level2">Yama Chan-Gu</h4>
+                  <h4 className="c-heading-lp1--level2">Yama Chan-Gu</h4>
                   <p className="t-team__text">Coder</p>
                   <div className="social">			
                     <button className="ic-btn b-tw">
@@ -276,7 +277,7 @@ class Landing1 extends Component{
                   <div className="t-team__image">                    
                     <img className="t-team__icon" src={team_3} alt />
                   </div>
-                  <h4 className="c-heading--level2">Sam Gimp</h4>
+                  <h4 className="c-heading-lp1--level2">Sam Gimp</h4>
                   <p className="t-team__text">Graphics Designer</p>
                   <div className="social">			
                     <button className="ic-btn b-tw">
@@ -320,7 +321,7 @@ class Landing1 extends Component{
             <div className="o-container">
               <div className="o-row">
                 <div className="o-col t-contact__header">
-                  <h1 className="c-heading c-heading--level1 c-heading--upper u-white">Contact Us</h1>
+                  <h1 className="c-heading-lp1 c-heading-lp1--level1 c-heading-lp1--upper u-white">Contact Us</h1>
                   <p className="u-text-italic">Proin iaculis purus consequat sem cure</p>
                 </div>
               </div>
@@ -348,7 +349,7 @@ class Landing1 extends Component{
               </div>
               <div className="o-row">
                 <div className="o-col u-flex-c">
-                  <a href="#" className="c-btn c-btn--primary u-mt-2 ">Send Message</a>
+                  <a href="#" className="c-btn-lp1 c-btn--primary-lp1 u-mt-2 ">Send Message</a>
                 </div>
               </div>
             </div>
@@ -380,4 +381,4 @@ class Landing1 extends Component{
     }
   };
 
-  export default CSSModules(Landing1, styles);
+  export default CSSModules(Landing1, styleLanding1);

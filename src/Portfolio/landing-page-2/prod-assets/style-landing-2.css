@@ -1,8 +1,10 @@
 @charset "UTF-8";
 *, *::before, *::after { box-sizing: border-box; }
 
-
-a { text-decoration: none; -webkit-transition: 0.5s ease; }
+.landing-page-2-container { background-color: #fff; color: #000; font-family: 'Montserrat', sans-serif; font-size: 1rem; margin: 0; padding: 0; }
+.landing-page-2-container { font-size: 1rem; font-family: "Montserrat", sans-serif; font-weight: 400; line-height: 1.5; margin: 0; margin-bottom: 10px; }
+.landing-page-2-container h1,.landing-page-2-container h2,.landing-page-2-container h3,.landing-page-2-container h4,.landing-page-2-container h5,.landing-page-2-container h6 { font-size: 1rem; line-height: 1.5; color: #222222; margin: 0; }
+.landing-page-2-container a { color: #222222; text-decoration: none; -webkit-transition: 0.5s ease; }
 
 ul { margin: 0; padding: 0; }
 
