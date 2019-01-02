@@ -17,6 +17,10 @@ import team_1 from './images/team/team-1.jpg';
 import team_2 from './images/team/team-2.jpg';
 import team_3 from './images/team/team-3.jpg';
 import logoLp1 from './images/logo-lp1.png';
+import brand1 from './images/brands/brand-1.jpg';
+import brand2 from './images/brands/brand-2.jpg';
+import brand3 from './images/brands/brand-3.jpg';
+import brand4 from './images/brands/brand-4.jpg';
 //import CSSModules from 'react-css-modules';
 
 class Landing1 extends Component{
@@ -171,7 +175,7 @@ class Landing1 extends Component{
             <div className="o-container">
               <div className="o-row ">
                 <div className="o-col o-col--md12 u-mb-6">
-                  <div className="t-about__header">                    
+                  <div className="t-about__header-lp1">                    
                     <h1 className="c-heading-lp1 c-heading-lp1--level1 c-heading-lp1--upper">About Us</h1>
                     <p className="u-text-italic">Proin iaculis purus consequat sem cure</p>
                   </div>                    
@@ -181,7 +185,7 @@ class Landing1 extends Component{
                 <div className="t-about__content o-col o-col--md6 o-col--lg4">                    
                   <h1 className="c-heading-lp1 c-heading-lp1--level3 c-heading-lp1--upper">July 2010</h1>
                   <h1 className="c-heading-lp1 c-heading-lp1--level3 ">Our Humble Beginnins</h1>
-                  <p className="t-about__text">Proin iaculis purus consequat sem cure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium quaerat deserunt optio facilis minima possimus reiciendis repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                  <p className="t-about__text-lp1">Proin iaculis purus consequat sem cure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium quaerat deserunt optio facilis minima possimus reiciendis repudiandae. </p>
                 </div>                                  
                 <div className="o-col o-col--md4 t-about__image">
                   <img className="t-about__item" src={about_1} alt="About" />
@@ -194,14 +198,14 @@ class Landing1 extends Component{
                 <div className="t-about__content--rev o-col--md4">                    
                   <h1 className="c-heading-lp1 c-heading-lp1--level3 c-heading-lp1--upper">January 2011</h1>
                   <h1 className="c-heading-lp1 c-heading-lp1--level3 ">Facing Startup battles</h1>
-                  <p className="t-about__text">Proin iaculis purus consequat sem cure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium quaerat deserunt optio facilis minima possimus reiciendis repudiandae. </p>
+                  <p className="t-about__text-lp1">Proin iaculis purus consequat sem cure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium quaerat deserunt optio facilis minima possimus reiciendis repudiandae. </p>
                 </div>  
               </div>
               <div className="o-row o-col o-col--md12 t-about__row">  
                 <div className="t-about__content o-col o-col--md6 o-col--lg4">                    
                   <h1 className="c-heading-lp1 c-heading-lp1--level3 c-heading-lp1--upper">July 2010</h1>
                   <h1 className="c-heading-lp1 c-heading-lp1--level3 ">Our Humble Beginnins</h1>
-                  <p className="t-about__text">Proin iaculis purus consequat sem cure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium quaerat deserunt optio facilis minima possimus reiciendis repudiandae. </p>
+                  <p className="t-about__text-lp1">Proin iaculis purus consequat sem cure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium quaerat deserunt optio facilis minima possimus reiciendis repudiandae. </p>
                 </div>                                  
                 <div className="o-col o-col--md4 t-about__image">
                   <img className="t-about__item" src={about_3} alt="About" />
@@ -214,7 +218,7 @@ class Landing1 extends Component{
                 <div className="t-about__content--rev o-col--md4">                    
                   <h1 className="c-heading-lp1 c-heading-lp1--level3 c-heading-lp1--upper">January 2011</h1>
                   <h1 className="c-heading-lp1 c-heading-lp1--level3 ">Facing Startup battles</h1>
-                  <p className="t-about__text">Proin iaculis purus consequat sem cure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium quaerat deserunt optio facilis minima possimus reiciendis repudiandae. </p>
+                  <p className="t-about__text-lp1">Proin iaculis purus consequat sem cure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium quaerat deserunt optio facilis minima possimus reiciendis repudiandae. </p>
                 </div>  
               </div>
               <div className="o-row o-col o-col--md12 t-about__row">  
@@ -230,7 +234,7 @@ class Landing1 extends Component{
             <div className="o-container">
               <div className="o-row ">
                 <div className="o-col o-col--md12 u-mb-6">
-                  <div className="t-about__header">                    
+                  <div className="t-about__header-lp1">                    
                     <h1 className="c-heading-lp1 c-heading-lp1--level1 c-heading-lp1--upper">Our Amazing team</h1>
                     <p className="u-text-italic">Proin iaculis purus consequat sem cure</p>
                   </div>                    
@@ -239,54 +243,54 @@ class Landing1 extends Component{
               <div className="o-row">
                 <div className="o-col o-col--lg4 t-team__box">
                   <div className="t-team__image">                    
-                    <img className="t-team__icon" src={team_1} alt />
+                    <img className="t-team__icon-lp1" src={team_1} alt />
                   </div>
                   <h4 className="c-heading-lp1--level2">Hans Urlich</h4>
-                  <p className="t-team__text">Marketer</p>
-                  <div className="social">			
-                    <button className="ic-btn b-tw">
+                  <p className="t-team__text-lp2">Marketer</p>
+                  <div className="social-lp1">			
+                    <button className="ic-btn-lp1 b-tw-lp1">
                       <i className="fa fa-twitter" />
                     </button>
-                    <button className="ic-btn b-fb">
+                    <button className="ic-btn-lp1 b-fb-lp1">
                       <i className="fa fa-facebook" />
                     </button>
-                    <button className="ic-btn b-gplus">
+                    <button className="ic-btn-lp1 b-gplus-lp1">
                       <i className="fa fa-google-plus" />
                     </button>
                   </div>                    
                 </div>
                 <div className="o-col o-col--lg4 t-team__box">
                   <div className="t-team__image">                    
-                    <img className="t-team__icon" src={team_2} alt />
+                    <img className="t-team__icon-lp1" src={team_2} alt />
                   </div>
                   <h4 className="c-heading-lp1--level2">Yama Chan-Gu</h4>
-                  <p className="t-team__text">Coder</p>
-                  <div className="social">			
-                    <button className="ic-btn b-tw">
+                  <p className="t-team__text-lp2">Coder</p>
+                  <div className="social-lp1">			
+                    <button className="ic-btn-lp1 b-tw-lp1">
                       <i className="fa fa-twitter" />
                     </button>
-                    <button className="ic-btn b-fb">
+                    <button className="ic-btn-lp1 b-fb-lp1">
                       <i className="fa fa-facebook" />
                     </button>
-                    <button className="ic-btn b-gplus">
+                    <button className="ic-btn-lp1 b-gplus-lp1">
                       <i className="fa fa-google-plus" />
                     </button>
                   </div>                    
                 </div>
                 <div className="o-col o-col--lg4 ">
                   <div className="t-team__image">                    
-                    <img className="t-team__icon" src={team_3} alt />
+                    <img className="t-team__icon-lp1" src={team_3} alt />
                   </div>
                   <h4 className="c-heading-lp1--level2">Sam Gimp</h4>
-                  <p className="t-team__text">Graphics Designer</p>
-                  <div className="social">			
-                    <button className="ic-btn b-tw">
+                  <p className="t-team__text-lp2">Graphics Designer</p>
+                  <div className="social-lp1">			
+                    <button className="ic-btn-lp1 b-tw-lp1">
                       <i className="fa fa-twitter" />
                     </button>
-                    <button className="ic-btn b-fb">
+                    <button className="ic-btn-lp1 b-fb-lp1">
                       <i className="fa fa-facebook" />
                     </button>
-                    <button className="ic-btn b-gplus">
+                    <button className="ic-btn-lp1 b-gplus-lp1">
                       <i className="fa fa-google-plus" />
                     </button>
                   </div>                    
@@ -299,20 +303,20 @@ class Landing1 extends Component{
               </div>
             </div>
           </section>
-          <section className="t-brands">
+          <section className="t-brands-lp1">
             <div className="o-container">
               <div className="o-row">
-                <div className="o-col o-col--md6 o-col--lg3 t-brands__box">
-                  <img src="images/brands/brand-1.jpg" alt />
+                <div className="o-col o-col--md6 o-col--lg3 t-brands-lp1__box">
+                  <img src={brand1} alt />
                 </div>
-                <div className="o-col o-col--md6 o-col--lg3 t-brands__box">
-                  <img src="images/brands/brand-2.jpg" alt />
+                <div className="o-col o-col--md6 o-col--lg3 t-brands-lp1__box">
+                  <img src={brand2} alt />
                 </div>
-                <div className="o-col o-col--md6 o-col--lg3 t-brands__box">
-                  <img src="images/brands/brand-3.jpg" alt />
+                <div className="o-col o-col--md6 o-col--lg3 t-brands-lp1__box">
+                  <img src={brand3} alt />
                 </div> 
-                <div className="o-col o-col--md6 o-col--lg3 t-brands__box">
-                  <img src="images/brands/brand-4.jpg" alt />
+                <div className="o-col o-col--md6 o-col--lg3 t-brands-lp1__box">
+                  <img src={brand4} alt />
                 </div>   
               </div> 
             </div>  
@@ -354,21 +358,21 @@ class Landing1 extends Component{
               </div>
             </div>
           </section>
-          <footer className="t-footer">
+          <footer className="t-footer-lp1">
             <div className="o-container">
               <div className="o-row">
-                <div className="o-col o-col--md4 t-footer__copyright">
+                <div className="o-col o-col--md4 t-footer-lp1__copyright">
                   <p>© Copyright 2014 FreebiesXpress.com</p>
                 </div>
                 <div className="o-col o-col--md4">
-                  <div className="social">			
-                    <button className="ic-btn b-tw">
+                  <div className="social-lp1">			
+                    <button className="ic-btn-lp1 b-tw-lp1">
                       <i className="fa fa-twitter" />
                     </button>
-                    <button className="ic-btn b-fb">
+                    <button className="ic-btn-lp1 b-fb-lp1">
                       <i className="fa fa-facebook" />
                     </button>
-                    <button className="ic-btn b-gplus">
+                    <button className="ic-btn-lp1 b-gplus-lp1">
                       <i className="fa fa-google-plus" />
                     </button>
                   </div>

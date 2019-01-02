@@ -1,10 +1,13 @@
+.landing-nr2-container{ max-height: calc(100vh - 50px); overflow: auto; }
+
 @charset "UTF-8";
 *, *::before, *::after { box-sizing: border-box; }
 
-.landing-page-2-container { background-color: #fff; color: #000; font-family: 'Montserrat', sans-serif; font-size: 1rem; margin: 0; padding: 0; }
-.landing-page-2-container { font-size: 1rem; font-family: "Montserrat", sans-serif; font-weight: 400; line-height: 1.5; margin: 0; margin-bottom: 10px; }
-.landing-page-2-container h1,.landing-page-2-container h2,.landing-page-2-container h3,.landing-page-2-container h4,.landing-page-2-container h5,.landing-page-2-container h6 { font-size: 1rem; line-height: 1.5; color: #222222; margin: 0; }
-.landing-page-2-container a { color: #222222; text-decoration: none; -webkit-transition: 0.5s ease; }
+.landing-nr2-container{ max-height: calc(100vh - 50px); overflow: auto; }
+.landing-page-2-container { height: calc(100vh - 50px); overflow: auto; background-color: #fff; color: #000; font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; }
+/*.landing-page-2-container { font-family: "Montserrat", sans-serif; font-weight: 400; line-height: 1.5; margin: 0; }*/
+.landing-page-2-container a { text-decoration: none; -webkit-transition: 0.5s ease; }
+.landing-page-2-container { height: calc( 100vh - 50px ); max-height: calc( 100vh - 50px ); }
 
 ul { margin: 0; padding: 0; }
 
@@ -76,7 +79,7 @@ img { max-width: 100%; }
 
 .o-row--center-y { align-items: center; }
 
-.c-btn { border: none; border-radius: 30px; display: inline-block; font-size-adjust: 0.875rem; font-weight: 700; line-height: 1.5; padding: 1rem 0; text-align: center; text-transform: uppercase; width: 220px; transition: all .25s ease-in-out; }
+.c-btn { border: none; border-radius: 30px; display: inline-block; font-size: 1.7rem; font-weight: 700; line-height: 1.5; padding: 1.6rem 0; text-align: center; text-transform: uppercase; width: 220px; transition: all .25s ease-in-out; color: white;}
 
 .c-btn:hover { text-decoration: none; }
 
@@ -88,7 +91,7 @@ img { max-width: 100%; }
 
 .c-header--level0 { font-size: 1.5rem; }
 
-@media (min-width: 768px) { .c-header--level0 { font-size: 4rem; } }
+@media (min-width: 768px) { .c-header--level0 { font-size: 6.5rem; font-weight: bold; } }
 
 .c-header--level1 { font-size: 1.5rem; }
 
@@ -139,6 +142,12 @@ img { max-width: 100%; }
 @media (min-width: 768px) { .c-portfolio-box__icon { height: 200px; } }
 
 @media (min-width: 1200px) { .c-portfolio-box__icon { height: 380px; } }
+/*
+test for overflow bug!!!!!!
+
+
+
+*/
 
 .c-portfolio-box__icon:hover { transform: scale(1.1); transition: .4s; cursor: pointer; }
 
@@ -172,7 +181,7 @@ img { max-width: 100%; }
 
 .b-gplus:hover { background-color: #b88b58; }
 
-.b-inst:hover { background-color: #b88b58; }
+.b-inst-lp1:hover { background-color: #b88b58; }
 
 .b-gh:hover { background-color: #b88b58; }
 
@@ -257,6 +266,13 @@ img { max-width: 100%; }
 @media (min-width: 1200px) { .t-about__btn { justify-content: flex-start; } }
 
 .t-about__vid { display: none; }
+
+/*
+test for overflow bug 222!!!!!!
+
+
+
+*/
 
 @media (min-width: 768px) { .t-about__vid { display: block; text-align: center; } }
 
@@ -350,13 +366,20 @@ img { max-width: 100%; }
 
 .t-facts__number { font-size: 3.6rem; color: #b88b58; }
 
+/*
+test for overflow bug 333!!!!!!
+
+
+
+*/
+
 .t-map { margin-top: 60px; }
 
 .t-map__container { max-width: 100%; margin: 0 auto; }
 
 .t-map__cart { max-width: 550px; padding-bottom: 15px; }
 
-@media (min-width: 768px) { .t-map__cart { width: 550px; position: absolute; margin-top: 70px; padding-top: 15px; padding-bottom: 30px; background-color: #fff; z-index: 1; } }
+@media (min-width: 768px) { .t-map__cart { width: 550px; position: relative; margin-top: 70px; padding-top: 15px; padding-bottom: 30px; background-color: #fff; z-index: 1; } }
 
 .t-map__text { display: inline-block; }
 
@@ -367,6 +390,13 @@ img { max-width: 100%; }
 #map { height: 450px; width: 100%; -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); }
 
 .t-footer { background-color: #000; padding-top: 15px; }
+
+/*
+test for overflow bug 333!!!!!!
+
+
+
+*/
 
 .t-footer__social { padding-top: 15px; justify-content: center; display: flex; flex-wrap: wrap; padding-bottom: 40px; }
 
@@ -383,6 +413,12 @@ img { max-width: 100%; }
 .t-footer__divider { margin: 10px auto 20px; max-width: 200px; border-bottom: 3px solid darkgray; }
 
 .t-footer__p { text-transform: uppercase; color: #8f8f8f; padding-top: 40px; font-weight: 500; }
+/*
+test for overflow bug 444!!!!!!
+
+
+
+*/
 
 .u-flex-c { display: flex; justify-content: center; }
 
