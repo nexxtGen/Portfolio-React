@@ -1,11 +1,43 @@
 import React, { Component } from 'react';
 import styleLanding2 from './prod-assets/style-landing-2.css';
 import CSSModules from 'react-css-modules';
+import GoogleMapReact from 'google-map-react';
+//import video file
+import vfx_design from './video/vfx_design.mp4';
 //import images
 import logo from './images/logo.png';
+import icon_1 from './images/icons/icon-1.png';
+import icon_2 from './images/icons/icon-2.png';
+import icon_3 from './images/icons/icon-3.png';
+import icon_4 from './images/icons/icon-4.png';
+import proj_1 from './images/projects/proj-1.jpg';
+import proj_2 from './images/projects/proj-2.jpg';
+import proj_3 from './images/projects/proj-3.jpg';
+import proj_4 from './images/projects/proj-4.jpg';
+import team_1 from './images/team/team-1.jpg';
+import team_2 from './images/team/team-2.jpg';
+import team_3 from './images/team/team-3.jpg';
+import client_1 from './images/clients/client-1.jpg';
+import apo from './images/clients/apo.jpg';
+import carousel from './images/clients/carousel.jpg';
+import brand_1 from './images/brands/brand-1.jpg';
+import brand_2 from './images/brands/brand-2.jpg';
+import brand_3 from './images/brands/brand-3.jpg';
+import brand_4 from './images/brands/brand-4.jpg';
+import brand_5 from './images/brands/brand-5.jpg';
+import brand_6 from './images/brands/brand-6.jpg';
+import premium_1 from './images/premium/premium-1.jpg';
+import premium_icon from './images/premium/premium-icon.jpg';
 //import CSSModules from 'react-css-modules';
 
 class Landing2 extends Component {
+    static defaultProps = {
+      center: {
+        lat: 51.0900,
+        lng: 17.0159
+      },
+      zoom: 12
+    };
     render() {
       return (   
         <div className="landing-nr2-container">  
@@ -58,7 +90,7 @@ class Landing2 extends Component {
                   </div>
                 </div>
                 <div className="o-row">
-                  <div className="o-col o-col--lg7 t-about__content">
+                  <div className="o-col o-col--lg7 t-about__content-lp2">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, nulla aspernatur dolor possimus assumenda amet autem delectus, reprehenderit vel libero alias illum, qui distinctio deleniti reiciendis porro consequatur. Optio, eveniet! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, aliquid! Repellat, hic est harum amet cumque perspiciatis expedita accusantium culpa ratione? Facilis corrupti, fugit numquam aliquid quis labore sed nobis!</p>
                     <div className="t-about__btn">
                       <a href="#" className="c-btn c-btn--primary u-mt-3">Learn more</a>
@@ -66,8 +98,8 @@ class Landing2 extends Component {
                   </div>
                   <div className="o-col o-col--lg5 t-about__vid">
                     <video className="u-box-shadow" width={500} controls>
-                      <source src="video/vfx_design.mp4" type="video/mp4" />
-                      <source src="video/vfx_design.mp4" type="video/ogg" />                                
+                      <source src={vfx_design} type="video/mp4" />
+                      <source src={vfx_design} type="video/ogg" />                                
                     </video>
                   </div>
                 </div>
@@ -85,7 +117,7 @@ class Landing2 extends Component {
                   <div className="o-col o-col--md6 o-col--lg3 t-services__divider">
                     <div className="c-icon-box">
                       <div className="c-icon-box__image">
-                        <img className="c-icon-box__icon" src="images/icons/icon-1.png" alt />
+                        <img className="c-icon-box__icon" src={icon_1} alt />
                       </div>
                       <h4 className="c-header--level2 u-white">Hight quality Design</h4>
                       <p className="c-icon-box__text u-secondary-color">Lorem ipsum dolor sit amet consectetur  dasf adipisicing elit.</p>                        
@@ -94,7 +126,7 @@ class Landing2 extends Component {
                   <div className="o-col o-col--md6 o-col--lg3 t-services__divider">
                     <div className="c-icon-box">
                       <div className="c-icon-box__image">
-                        <img className="c-icon-box__icon" src="images/icons/icon-2.png" alt />
+                        <img className="c-icon-box__icon" src={icon_2} alt />
                       </div>
                       <h4 className="c-header--level2 u-white">Modern Design</h4>
                       <p className="c-icon-box__text u-secondary-color">Lorem ipsum dolor sit amet consectetur  dasf adipisicing elit.</p>                        
@@ -103,7 +135,7 @@ class Landing2 extends Component {
                   <div className="o-col o-col--md6 o-col--lg3 t-services__divider">
                     <div className="c-icon-box">
                       <div className="c-icon-box__image">
-                        <img className="c-icon-box__icon" src="images/icons/icon-3.png" alt />
+                        <img className="c-icon-box__icon" src={icon_3} alt />
                       </div>
                       <h4 className="c-header--level2 u-white">Regular Updates</h4>
                       <p className="c-icon-box__text u-secondary-color">Lorem ipsum dolor sit amet consectetur  dasf adipisicing elit  dolor sit amet.</p>                        
@@ -112,7 +144,7 @@ class Landing2 extends Component {
                   <div className="o-col o-col--md6 o-col--lg3 t-services__divider">
                     <div className="c-icon-box">
                       <div className="c-icon-box__image">
-                        <img className="c-icon-box__icon" src="images/icons/icon-4.png" alt />
+                        <img className="c-icon-box__icon" src={icon_4} alt />
                       </div>
                       <h4 className="c-header--level2 u-white">Fast and free support</h4>
                       <p className="c-icon-box__text u-secondary-color">Lorem ipsum dolor sit amet consectetur  dasf adipisicing elit  dolor sit amet.</p>                        
@@ -147,28 +179,28 @@ class Landing2 extends Component {
                       <h2 className="c-header--level2 c-header--white">About</h2>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>                        
                     </div>
-                    <img className="u-fit-cover t-projects__img" src="images/projects/proj-1.jpg" alt="cyber" />
+                    <img className="u-fit-cover t-projects__img" src={proj_1} alt="cyber" />
                   </div>
                   <div className="o-col o-col--md6 o-col--lg3 t-projects__img-container">
                     <div className="t-projects__layer">
                       <h2 className="c-header--level2 c-header--white">About</h2>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <img className="u-fit-cover t-projects__img" src="images/projects/proj-2.jpg" alt="cyber" />
+                    <img className="u-fit-cover t-projects__img" src={proj_2} alt="cyber" />
                   </div>
                   <div className="o-col o-col--md6 o-col--lg3 t-projects__img-container">
                     <div className="t-projects__layer">
                       <h2 className="c-header--level2 c-header--white">About</h2>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>                        
                     </div>
-                    <img className="u-fit-cover t-projects__img" src="images/projects/proj-3.jpg" alt="cyber" />
+                    <img className="u-fit-cover t-projects__img" src={proj_3} alt="cyber" />
                   </div>
                   <div className="o-col o-col--md6 o-col--lg3 t-projects__img-container">
                     <div className="t-projects__layer">
                       <h2 className="c-header--level2 c-header--white">About</h2>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <img className="u-fit-cover t-projects__img" src="images/projects/proj-4.jpg" alt="cyber" />
+                    <img className="u-fit-cover t-projects__img" src={proj_4} alt="cyber" />
                   </div>
                 </div>
                 <div className="o-row">
@@ -177,28 +209,28 @@ class Landing2 extends Component {
                       <h2 className="c-header--level2 c-header--white">About</h2>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>                        
                     </div>
-                    <img className="u-fit-cover t-projects__img" src="images/projects/proj-1.jpg" alt="cyber" />
+                    <img className="u-fit-cover t-projects__img" src={proj_1} alt="cyber" />
                   </div>
                   <div className="o-col o-col--md6 o-col--lg3 t-projects__img-container">
                     <div className="t-projects__layer">
                       <h2 className="c-header--level2 c-header--white">About</h2>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <img className="u-fit-cover t-projects__img" src="images/projects/proj-2.jpg" alt="cyber" />
+                    <img className="u-fit-cover t-projects__img" src={proj_2} alt="cyber" />
                   </div>
                   <div className="o-col o-col--md6 o-col--lg3 t-projects__img-container">
                     <div className="t-projects__layer">
                       <h2 className="c-header--level2 c-header--white">About</h2>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>                        
                     </div>
-                    <img className="u-fit-cover t-projects__img" src="images/projects/proj-3.jpg" alt="cyber" />
+                    <img className="u-fit-cover t-projects__img" src={proj_3} alt="cyber" />
                   </div>
                   <div className="o-col o-col--md6 o-col--lg3 t-projects__img-container">
                     <div className="t-projects__layer">
                       <h2 className="c-header--level2 c-header--white">About</h2>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <img className="u-fit-cover t-projects__img" src="images/projects/proj-4.jpg" alt="cyber" />
+                    <img className="u-fit-cover t-projects__img" src={proj_4} alt="cyber" />
                   </div>
                 </div>
                 <div className="o-row">
@@ -207,28 +239,28 @@ class Landing2 extends Component {
                       <h2 className="c-header--level2 c-header--white">About</h2>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>                        
                     </div>
-                    <img className="u-fit-cover t-projects__img" src="images/projects/proj-1.jpg" alt="cyber" />
+                    <img className="u-fit-cover t-projects__img" src={proj_1} alt="cyber" />
                   </div>
                   <div className="o-col o-col--md6 o-col--lg3 t-projects__img-container">
                     <div className="t-projects__layer">
                       <h2 className="c-header--level2 c-header--white">About</h2>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <img className="u-fit-cover t-projects__img" src="images/projects/proj-2.jpg" alt="cyber" />
+                    <img className="u-fit-cover t-projects__img" src={proj_2} alt="cyber" />
                   </div>
                   <div className="o-col o-col--md6 o-col--lg3 t-projects__img-container">
                     <div className="t-projects__layer">
                       <h2 className="c-header--level2 c-header--white">About</h2>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>                        
                     </div>
-                    <img className="u-fit-cover t-projects__img" src="images/projects/proj-3.jpg" alt="cyber" />
+                    <img className="u-fit-cover t-projects__img" src={proj_3} alt="cyber" />
                   </div>
                   <div className="o-col o-col--md6 o-col--lg3 t-projects__img-container">
                     <div className="t-projects__layer">
                       <h2 className="c-header--level2 c-header--white">About</h2>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <img className="u-fit-cover t-projects__img" src="images/projects/proj-4.jpg" alt="cyber" />
+                    <img className="u-fit-cover t-projects__img" src={proj_4} alt="cyber" />
                   </div>
                 </div>
                 <div className="o-row">
@@ -250,7 +282,7 @@ class Landing2 extends Component {
                   <div className="o-col o-col--lg4">
                     <div className="t-team__box">
                       <div className="t-team__image">                    
-                        <img className="t-team__icon" src="images/team/team-2.jpg" alt />
+                        <img className="t-team__icon" src={team_2} alt />
                       </div>
                       <h4 className="c-header--level2">Kim UnDzon</h4>
                       <p className="t-team__text">Marketer</p>
@@ -276,7 +308,7 @@ class Landing2 extends Component {
                   <div className="o-col o-col--lg4">
                     <div className="t-team__box">
                       <div className="t-team__image">                    
-                        <img className="t-team__icon" src="images/team/team-1.jpg" alt />
+                        <img className="t-team__icon" src={team_1} alt />
                       </div>
                       <h4 className="c-header--level2">Kamil Kovalsky</h4>
                       <p className="t-team__text">CEO</p>
@@ -302,7 +334,7 @@ class Landing2 extends Component {
                   <div className="o-col o-col--lg4">
                     <div className="t-team__box">
                       <div className="t-team__image">                    
-                        <img className="t-team__icon" src="images/team/team-3.jpg" alt />
+                        <img className="t-team__icon" src={team_3} alt />
                       </div>
                       <h4 className="c-header--level2">Hans Klos</h4>
                       <p className="t-team__text">Programmer</p>
@@ -339,13 +371,13 @@ class Landing2 extends Component {
                 <div className="o-row">
                   <div className="o-col">                    
                     <div className="t-happy__image">                    
-                      <img className="t-happy__icon" src="images/clients/client-1.jpg" alt />
+                      <img className="t-happy__icon" src={client_1} alt />
                     </div>
                     <h4 className="t-happy__name u-mt-3">Mr Stock</h4>
                     <h4 className="t-happy__status">Head of MeM Departament</h4>
-                    <img src="images/clients/apo.jpg" alt="apostrof" />                    
+                    <img src={apo} alt="apostrof" />                    
                     <p className="t-happy__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem excepturi optio, cumque non libero temporibus dolorum aperiam aspernatur a molestias. Dolorem excepturi optio, cumque non libero temporibus dolorum aperiam aspernatur a molestias repellendus sed iusto odio beatae quia tempora! Provident, harum expedita.</p>  
-                    <img src="images/clients/carousel.jpg" className="u-mt-3" alt="apostrof" />       
+                    <img src={carousel} className="u-mt-3" alt="apostrof" />       
                   </div>
                 </div>
               </div>
@@ -354,16 +386,16 @@ class Landing2 extends Component {
               <div className="o-container">
                 <div className="o-row">                
                   <div className="o-col o-col--lg4 t-brands__box">
-                    <img src="images/brands/brand-1.jpg" className="t-brands__item" alt="brand" />
-                    <img src="images/brands/brand-2.jpg" className="t-brands__item" alt="brand" />                    
+                    <img src={brand_1} className="t-brands__item" alt="brand" />
+                    <img src={brand_2} className="t-brands__item" alt="brand" />                    
                   </div>
                   <div className="o-col o-col--lg4 t-brands__box">
-                    <img src="images/brands/brand-3.jpg" className="t-brands__item" alt="brand" />
-                    <img src="images/brands/brand-4.jpg" className="t-brands__item" alt="brand" />                    
+                    <img src={brand_3} className="t-brands__item" alt="brand" />
+                    <img src={brand_4} className="t-brands__item" alt="brand" />                    
                   </div>
                   <div className="o-col o-col--lg4 t-brands__box">
-                    <img src="images/brands/brand-5.jpg" className="t-brands__item" alt="brand" />
-                    <img src="images/brands/brand-6.jpg" className="t-brands__item" alt="brand" />                    
+                    <img src={brand_5} className="t-brands__item" alt="brand" />
+                    <img src={brand_6} className="t-brands__item" alt="brand" />                    
                   </div>
                 </div>
               </div>
@@ -466,12 +498,12 @@ class Landing2 extends Component {
                 </div>
                 <div className="o-row t-premium--divider">
                   <div className="o-col o-col--md5 t-premium__img">
-                    <img className="t-premium__item" src="images/premium/premium-1.jpg" alt="Premium Box" />
+                    <img className="t-premium__item" src={premium_1} alt="Premium Box" />
                   </div>
                   <div className="o-col o-col--md7 t-premium__features">
                     <div className="o-row u-direction-row">
                       <div className="o-col--sm2 t-premium__icon-box">
-                        <img src="images/premium/premium-icon.jpg" alt="ok" />
+                        <img src={premium_icon} alt="ok" />
                       </div>
                       <div className="o-col--sm10">
                         <h2>First Feature</h2>
@@ -483,7 +515,7 @@ class Landing2 extends Component {
                     </div>
                     <div className="o-row u-direction-row">
                       <div className="o-col--sm2 t-premium__icon-box">
-                        <img src="images/premium/premium-icon.jpg" alt="ok" />
+                        <img src={premium_icon} alt="ok" />
                       </div>
                       <div className="o-col--sm10">
                         <h2>Second Feature</h2>
@@ -492,7 +524,7 @@ class Landing2 extends Component {
                     </div>
                     <div className="o-row u-direction-row">
                       <div className="o-col--sm2 t-premium__icon-box">
-                        <img src="images/premium/premium-icon.jpg" alt="ok" />
+                        <img src={premium_icon} alt="ok" />
                       </div>
                       <div className="o-col--sm10">
                         <h2>Third feature</h2>
@@ -503,7 +535,7 @@ class Landing2 extends Component {
                 </div>
                 <div className="o-row">
                   <div className="o-col t-premium__footer u-mt-3">
-                    <img src="images/clients/carousel.jpg" alt />                    
+                    <img src={carousel} alt />                    
                   </div>
                   <div className="o-col t-premium__footer">                    
                     <a href="#" className="c-btn c-btn--primary">Get in touch</a>
@@ -551,7 +583,7 @@ class Landing2 extends Component {
                 </div>
               </div>
             </section>
-            <section className="t-contact">
+            <section className="t-contact-lp2">
               <div className="o-container">
                 <div className="o-row">
                   <div className="o-col t-about__head u-mb-5">
@@ -560,7 +592,7 @@ class Landing2 extends Component {
                   </div>
                 </div>
                 <div className="o-row">
-                  <div className="o-col t-contact__form-container">
+                  <div className="o-col t-contact-lp2__form-container">
                     <form action="#" id="Form">  
                       <div className="o-row">
                         <div className="o-col o-col--md6">
@@ -594,42 +626,49 @@ class Landing2 extends Component {
             </section>
             <section className="t-map">
               <div id="page-wrapper" className="t-map__container">  
-                <div className="o-container">
-                  <div className="o-row t-map__cart u-direction-row">                    
-                    <div className="o-col o-col--sm2 t-map__icon-container">
-                      <i className="far fa-envelope c-icon-fa" />
-                    </div>
-                    <div className="o-col o-col--sm10 t-map__text-container">
-                      <p className="t-map__text">O Box 16524 Collins Street West Victoria</p>
-                    </div>   
-                    <div className="o-col o-col--sm2 t-map__icon-container">
-                      <i className="fas fa-location-arrow c-icon-fa" />
-                    </div>
-                    <div className="o-col o-col--sm10 t-map__text-container">
-                      <p className="t-map__text">1764  King Street, Melboure Australia</p>
-                    </div>   
-                    <div className="o-col o-col--sm2 t-map__icon-container">
-                      <i className="fas fa-phone c-icon-fa" />
-                    </div>
-                    <div className="o-col o-col--sm10 t-map__text-container">
-                      <p>+00 0 124 4565</p>
-                    </div>  
-                    <div className="o-col o-col--sm2 t-map__icon-container">
-                      <i className="fas fa-at c-icon-fa" />
-                    </div>
-                    <div className="o-col o-col--sm10 t-map__text-container">
-                      <p>bukingdesign@umail.com</p>
-                    </div> 
-                    <div className="o-col o-col--sm2 t-map__icon-container">
-                      <i className="fas fa-globe-americas c-icon-fa" />
-                    </div>
-                    <div className="o-col o-col--sm10 t-map__text-container">
-                      <p>www.envato.com</p>
-                    </div>  
+                                                   
+                  <div id="map">
+                    <GoogleMapReact
+                      bootstrapURLKeys={{ key: 'AIzaSyCJUTPydGAimC-c88u_WQ1kCTegpHY52eM' }}
+                      defaultCenter={this.props.center}
+                      defaultZoom={this.props.zoom}
+                      >
+                      <div className="o-container"  lat={51.1400} lng={16.8000}>
+                        <div className="o-row t-map__cart u-direction-row">                    
+                          <div className="o-col o-col--sm2 t-map__icon-container">
+                            <i className="far fa-envelope c-icon-fa" />
+                          </div>
+                          <div className="o-col o-col--sm10 t-map__text-container">
+                            <p className="t-map__text">O Box 16524 Collins Street West Victoria</p>
+                          </div>   
+                          <div className="o-col o-col--sm2 t-map__icon-container">
+                            <i className="fas fa-location-arrow c-icon-fa" />
+                          </div>
+                          <div className="o-col o-col--sm10 t-map__text-container">
+                            <p className="t-map__text">1764  King Street, Melboure Australia</p>
+                          </div>   
+                          <div className="o-col o-col--sm2 t-map__icon-container">
+                            <i className="fas fa-phone c-icon-fa" />
+                          </div>
+                          <div className="o-col o-col--sm10 t-map__text-container">
+                            <p>+00 0 124 4565</p>
+                          </div>  
+                          <div className="o-col o-col--sm2 t-map__icon-container">
+                            <i className="fas fa-at c-icon-fa" />
+                          </div>
+                          <div className="o-col o-col--sm10 t-map__text-container">
+                            <p>bukingdesign@umail.com</p>
+                          </div> 
+                          <div className="o-col o-col--sm2 t-map__icon-container">
+                            <i className="fas fa-globe-americas c-icon-fa" />
+                          </div>
+                          <div className="o-col o-col--sm10 t-map__text-container">
+                            <p>www.envato.com</p>
+                          </div>  
+                        </div>
+                      </div>
+                    </GoogleMapReact>
                   </div>
-                </div>                                   
-                <div id="map">
-                </div>
               </div>  
             </section>
             <footer className="t-footer">
