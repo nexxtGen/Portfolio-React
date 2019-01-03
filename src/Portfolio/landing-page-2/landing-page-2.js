@@ -506,7 +506,7 @@ class Landing2 extends Component {
                         <img src={premium_icon} alt="ok" />
                       </div>
                       <div className="o-col--sm10">
-                        <h2>First Feature</h2>
+                        <h2 className="features-lp2">First Feature</h2>
                         <p>Paresent ipsum lorem patriae nostra lex. Deus abitus.</p>
                         <p>- FEATURE ONE</p>
                         <p>- FEATURE TWO</p>
@@ -518,7 +518,7 @@ class Landing2 extends Component {
                         <img src={premium_icon} alt="ok" />
                       </div>
                       <div className="o-col--sm10">
-                        <h2>Second Feature</h2>
+                        <h2 className="features-lp2">Second Feature</h2>
                         <p>Paresent ipsum lorem patriae nostra lex. Deus abitus.</p>                            
                       </div>
                     </div>
@@ -527,7 +527,7 @@ class Landing2 extends Component {
                         <img src={premium_icon} alt="ok" />
                       </div>
                       <div className="o-col--sm10">
-                        <h2>Third feature</h2>
+                        <h2 className="features-lp2">Third feature</h2>
                         <p>Paresent ipsum lorem patriae nostra lex. Deus abitus.</p>                            
                       </div>
                     </div>
@@ -554,28 +554,28 @@ class Landing2 extends Component {
                 <div className="o-row ">
                   <div className="o-col o-col--md6 o-col--lg3">
                     <div className="c-icon-box">                        
-                      <h1 className="t-facts__number u-mb-1">1000</h1>
+                      <h1 className="t-facts__number u-mb-2">1000</h1>
                       <h4 className="c-header--level2 u-white">Design Projects</h4>                        
                       <p className="c-icon-box__text u-secondary-color">Lorem ipsum dolor sit amet consectetur  dasf adipisicing elit.</p>                        
                     </div>
                   </div>
                   <div className="o-col o-col--md6 o-col--lg3">
                     <div className="c-icon-box">                        
-                      <h1 className="t-facts__number u-mb-1">900</h1>
+                      <h1 className="t-facts__number u-mb-2">900</h1>
                       <h4 className="c-header--level2 u-white">Photos</h4>
                       <p className="c-icon-box__text u-secondary-color">Lorem ipsum dolor sit amet consectetur  dasf adipisicing elit.</p>                        
                     </div>
                   </div>
                   <div className="o-col o-col--md6 o-col--lg3">
                     <div className="c-icon-box">                        
-                      <h1 className="t-facts__number u-mb-1">500</h1>
+                      <h1 className="t-facts__number u-mb-2">500</h1>
                       <h4 className="c-header--level2 u-white">Marketing Ideas</h4>
                       <p className="c-icon-box__text u-secondary-color">Lorem ipsum dolor sit amet consectetur  dasf adipisicing elit.</p>                        
                     </div>
                   </div>
                   <div className="o-col o-col--md6 o-col--lg3">
                     <div className="c-icon-box">                        
-                      <h1 className="t-facts__number u-mb-1">1000</h1>
+                      <h1 className="t-facts__number u-mb-2">1000</h1>
                       <h4 className="c-header--level2 u-white">Exhibitions</h4>
                       <p className="c-icon-box__text u-secondary-color">Lorem ipsum dolor sit amet consectetur  dasf adipisicing elit.</p>                        
                     </div>
@@ -693,7 +693,7 @@ class Landing2 extends Component {
                       </button>                            
                     </div>
                     <div className="t-footer__awax">                        
-                      <h1 className="c-header c-header--level3 c-header--white">Awax c 2018</h1>
+                      <h1 className="c-header c-header--level3 c-header--white awax-footer-text">Awax c 2018</h1>
                     </div>
                   </div>
                   <div className="o-col o-col--lg4 t-footer__text">

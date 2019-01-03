@@ -95,9 +95,9 @@ img { max-width: 100%; }
 
 @media (min-width: 768px) { .c-header--level1 { font-size: 3rem; } }
 
-.c-header--level2 { font-size: 1.125rem; }
+.c-header--level2 { font-size: 1.325rem; font-weight: bold; }
 
-@media (min-width: 768px) { .c-header--level2 { font-size: 1.5rem; } }
+@media (min-width: 768px) { .c-header--level2 { font-size: 24px; } }
 
 .c-header--level3 { font-size: 1.125rem; }
 
@@ -129,7 +129,7 @@ img { max-width: 100%; }
 
 .c-icon-box__icon:hover { transform: scale(1.1); transition: all 0.5s cubic-bezier(0.25, 0.25, 0, 0.25) 0s; }
 
-.c-icon-box__text { font-size: 0.875rem; margin-top: 15px; }
+.c-icon-box__text { font-size: 15px; margin-top: 15px; }
 
 .c-portfolio-box { text-align: center; margin-bottom: 40px; }
 
@@ -187,9 +187,9 @@ test for overflow bug!!!!!!
 
 .c-label__primary { color: #000; font-size: 36px;; }
 
-.c-label__secondary { color: #aeaeae; font-size: 20px; }
+.c-label__secondary { color: #aeaeae; font-size: 19px; }
 
-.c-menu__item { color: #000; display: inline-block; font-size: 1rem; padding-bottom: 7.5px; padding-top: 7.5px; text-align: center; text-transform: uppercase; width: 100%; transition: all 0.5s cubic-bezier(0.25, 0.25, 0, 0.25) 0s; position: relative; font-weight: 600; }
+.c-menu__item { color: #000; display: inline-block; font-size: 15px; padding-bottom: 7.5px; padding-top: 7.5px; text-align: center; text-transform: uppercase; width: 100%; transition: all 0.5s cubic-bezier(0.25, 0.25, 0, 0.25) 0s; position: relative; font-weight: 600; }
 
 @media (min-width: 768px) { .c-menu__item { padding: 17px; display: inline-block; width: auto; border-right: 1px solid #aeaeae; border-left: 1px solid #aeaeae; } }
 
@@ -310,7 +310,7 @@ test for overflow bug 222!!!!!!
 
 .t-team__social { padding-bottom: 40px; }
 
-.t-team__text { font-size: 1rem; padding-bottom: 20px; }
+.t-team__text { font-size: 17px; padding-bottom: 20px; }
 
 .t-team__footer { margin-top: 30px; }
 
@@ -320,9 +320,9 @@ test for overflow bug 222!!!!!!
 
 .t-happy__icon { margin-top: 40px; border-radius: 50%; height: 200px; width: 200px; transition: all 0.5s cubic-bezier(0.25, 0.25, 0, 0.25) 0s; object-fit: cover; box-shadow: 0px 0px 8px darkgray; }
 
-.t-happy__name { font-size: 1.8rem; font-weight: bold; }
+.t-happy__name { font-size: 30px; font-weight: bold; }
 
-.t-happy__status { font-size: 1.125rem; font-weight: bold; margin-bottom: 30px; }
+.t-happy__status { font-size: 18px; font-weight: bold; margin-bottom: 30px; }
 
 .t-happy__text { color: #aeaeae; padding: 5px 80px; }
 
@@ -338,11 +338,11 @@ test for overflow bug 222!!!!!!
 
 .t-price__container { text-align: center; background-color: #fff; margin-top: 15px; margin-bottom: 60px; }
 
-.t-price__head { padding-top: 30px; font-size: 1.35rem; font-weight: 500; }
+.t-price__head { padding-top: 30px; font-size: 18px; font-weight: 400; }
 
-.t-price__price { font-size: 2.4rem; line-height: 1.2; }
+.t-price__price { font-size: 40px; line-height: 1.2; margin-top: 10px; }
 
-.t-price__month { color: #aeaeae; font-weight: 500; font-size: 1.125rem; padding-bottom: 20px; }
+.t-price__month { color: #aeaeae; font-weight: 500; font-size: 18px; padding-bottom: 20px; }
 
 .t-price__btn { margin-top: 30px; background-color: #222222; width: 180px; margin-bottom: 45px; }
 
@@ -354,6 +354,8 @@ test for overflow bug 222!!!!!!
 
 .t-premium__item { display: none; }
 
+.features-lp2 { margin-top: 0;}
+
 @media (min-width: 768px) { .t-premium__item { display: block; } }
 
 .t-premium__footer { text-align: center; padding-top: 22.5px; }
@@ -362,14 +364,7 @@ test for overflow bug 222!!!!!!
 
 .t-facts { margin-top: 80px; margin-bottom: 40px; padding-bottom: 70px; background-color: #000; }
 
-.t-facts__number { font-size: 3.6rem; color: #b88b58; }
-
-/*
-test for overflow bug 333!!!!!!
-
-
-
-*/
+.t-facts__number { font-size: 60px; color: #b88b58;  }
 
 .t-map { margin-top: 60px; }
 
@@ -395,7 +390,7 @@ test for overflow bug 333!!!!!!
 
 
 */
-
+.awax-footer-text { font-size: 18px;}
 .t-footer__social { padding-top: 15px; justify-content: center; display: flex; flex-wrap: wrap; padding-bottom: 40px; }
 
 @media (min-width: 1200px) { .t-footer__social { justify-content: left; } }
