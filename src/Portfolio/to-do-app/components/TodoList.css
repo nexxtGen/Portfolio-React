@@ -1,8 +1,5 @@
-ol {
-    background-color: rgba(20, 20, 20, 0.5);
-    padding: 5px;
-}
-.TodoList {
+.TodoList-toDoApp {
+    padding-left: 30px;
     position: relative;
     box-sizing: border-box;
     color: blueviolet;
@@ -10,7 +7,7 @@ ol {
     margin: 15px auto;    
 }
 
-h3 {
+.h3-toDoApp {
     position: relative;
     margin: 0 auto 5px;
 }

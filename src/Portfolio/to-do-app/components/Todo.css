@@ -1,14 +1,11 @@
-li {
-    box-sizing: border-box;
-    margin: 5px 30px 5px 0;
-    background-color: rgba(27, 27, 27, 0.5);
-    padding: 0;
 
-}
 p{
     margin-top: 2px;
 }
-.item {
+.item-toDoApp {
+    padding: 0;
+    background-color: rgba(27, 27, 27, 0.5);
+    margin: 5px 30px 5px 0;
     box-sizing: border-box;
     position: relative;
     color: rgb(224, 224, 224);
@@ -19,7 +16,7 @@ p{
     justify-content: left;
 }
 
-.itemSpan {
+.itemSpan-toDoApp {
     position: relative;
     color: rgb(236, 236, 236);
     font-size: 16px;
@@ -27,34 +24,34 @@ p{
     font-family: 'Montserrat', sans-serif;
 }
 
-.itemSpan:hover {
+.itemSpan-toDoApp:hover {
     position: relative;
     text-decoration: line-through;
     color: rgb(157, 171, 229);
     cursor: pointer;
 }
-.active:hover {
+.active-toDoApp:hover {
     position: relative;    
     color: rgb(0, 47, 255);
     cursor: pointer;
     text-decoration: none;
 }
-.active {
+.active-toDoApp {
     color: rgb(0, 38, 255);
     text-align: left;
     text-decoration: line-through;
 }
 
-.date {
+.date-toDoApp {
     font-size: 13px;
     color: rgb(198, 211, 255);
 }
 
-.born {
+.born-toDoApp {
     font-size: 11px;    
 }
 
-.div1 {
+.div1-toDoApp {
     box-sizing: border-box;
     width: 85%;
     padding: 5px;
@@ -62,20 +59,20 @@ p{
 
 }
 
-.div2 {    
+.div2-toDoApp {    
     text-align: right;
     box-sizing: border-box;
     width: 15%;
     display: flex;
     justify-content: flex-end;
 }
-button {
+.button-toDoApp {
     background: rgba(27, 27, 27, 0.5);
     border: none;
     border-left: 1px solid black;
     color: white;
 }
-button:hover {
+.button-toDoApp:hover {
     cursor: pointer;
     background: rgba(255, 36, 36, 0.5);
 

@@ -1,4 +1,8 @@
-.form {
+.form-toDoApp {
     position: relative;
     font-family: 'Montserrat', sans-serif;
+}
+.p-toDoApp {
+    text-align: center;
+    margin-left: 60px;
 }

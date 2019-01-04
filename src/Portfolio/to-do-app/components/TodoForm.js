@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './TodoForm.css';
+import './TodoForm.css';
 
 class TodoForm extends React.Component {
     constructor(props) {
@@ -21,10 +21,10 @@ class TodoForm extends React.Component {
 
     render() {
         return (
-            <div className={style.form}>
+            <div className="form-toDoApp">
                 <form onSubmit={this.submit.bind(this)}>
-                    <label>
-                        <p><b>Add new Item:</b></p>
+                    <label className="label-toDoApp">
+                        <p className="p-toDoApp"><b>Add new Item:</b></p>
                         <input type="text" value={this.state.value} onChange={this.onChangeForm.bind(this)}></input>
                     </label>
                     <input type="submit" value="Add Item"></input>
@@ -33,17 +33,5 @@ class TodoForm extends React.Component {
         )
     }
 };
-/* // Komponent funkcyjny który trochę źle działa . // Źle działa bo chyba nie ma w addTodo event.preventdefault()  
-const TodoForm = props => (
-    <div>
-        <form onSubmit={() => props.addTodo(props.value)}>
-            <label>
-                <p>Add new Item:</p>
-                <input type="text" value={props.value} onChange={props.onChange}></input>
-            </label>
-            <input type="submit" value="Submit"></input>
-        </form>
-    </div>
-)
-*/
+
 export default TodoForm;

@@ -1,3 +1,19 @@
+.ToDoApp-container{
+    /*
+    background: url('http://lh3.googleusercontent.com/hkD0ut_Lg7WNVwpg5JbPGLfnWP81dqnTAj5ELdVbiz5dUgbB7onEOfdOcD1eYpaSmvKT6rZmOL1v3XhiRktp=s0') fixed  no-repeat; 
+    */
+    background: url('../../images/bg3.jpg') no-repeat;
+    background-size: cover; 
+    background-position: center;
+    width:100%;
+    height: calc(100vh - 50px);
+    overflow: auto;
+}
+.ToDoApp-container-2{
+    display: flex; 
+    justify-content: center;
+     margin-top: 60px;
+}
 .TodoApp {    
     text-align: center;
     color: #222;
@@ -10,7 +26,10 @@
     margin: 50px auto;
     width: 450px;
     min-height: 500px;
+    /*
     background: url('http://lh3.googleusercontent.com/hkD0ut_Lg7WNVwpg5JbPGLfnWP81dqnTAj5ELdVbiz5dUgbB7onEOfdOcD1eYpaSmvKT6rZmOL1v3XhiRktp=s0') fixed  no-repeat;
+    */
+    background: url('../../images/bg3.jpg') no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;

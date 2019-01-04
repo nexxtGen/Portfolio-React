@@ -1,8 +1,8 @@
 import React from 'react';
-import style from './TodoFilter.css'
+import './TodoFilter.css';
 
 const TodoFilter = props => (
-    <form className={style.filter}>
+    <form className="filter-toDoApp">
         <input type="text" placeholder="Filter items..." value={props.filter} onChange={props.onFilterChange}/>
     </form>
 )

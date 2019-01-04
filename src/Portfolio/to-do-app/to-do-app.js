@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import uuid from 'uuid';
 import moment from 'moment';
-import style from './to-do-app.css';
+import './to-do-app.css';
 import Title from './components/Title';
 import TodoList from './components/TodoList';
 import TodoFilter from './components/TodoFilter';
@@ -98,16 +98,19 @@ class ToDo extends Component {
     
     render() {
         console.log(moment);
-        return (          
-            
-            <div className={style.TodoApp}> 
-                <Title data={this.state.data}/>                
-                <TodoForm addItemFunc={this.addTodo.bind(this)}/> 
-                <TodoFilter filter={this.state.filter} onFilterChange={this.onFilterChange.bind(this)}/>
-                <TodoList data={this.state.data.filter(item  => {
-                        return item.text.indexOf(this.state.filter) > -1;
-                    })} remove={this.removeTodo.bind(this)} toggleClass={this.toggleClass.bind(this)}/>
-            </div>
+        return (
+            <div className="ToDoApp-container">
+                <div className="ToDoApp-container-2">
+                    <div className="TodoApp"> 
+                        <Title data={this.state.data}/>                
+                        <TodoForm addItemFunc={this.addTodo.bind(this)}/> 
+                        <TodoFilter filter={this.state.filter} onFilterChange={this.onFilterChange.bind(this)}/>
+                        <TodoList data={this.state.data.filter(item  => {
+                                return item.text.indexOf(this.state.filter) > -1;
+                            })} remove={this.removeTodo.bind(this)} toggleClass={this.toggleClass.bind(this)}/>
+                    </div>
+                </div>
+            </div>   
         )
     }
 }
