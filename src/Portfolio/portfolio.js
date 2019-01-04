@@ -17,6 +17,9 @@ class Portfolio extends Component {
                     <Link to="/portfolio/landing-2">
                         <button className="portfolio-button">LANDING 222</button>
                     </Link>
+                    <Link to="/portfolio/toDo">
+                        <button className="portfolio-button">ToDo React</button>
+                    </Link>
                 </div>             
             </div>
         );
