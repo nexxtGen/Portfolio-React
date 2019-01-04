@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 //import components
-import Header from './Containers/header';
+import App from './Containers/App';
 import Home from './Components/home';
 import Contact from './Components/contact';
 import PersonalData from './Containers/personal-data/personal-data';
@@ -13,7 +13,7 @@ import Landing2 from './Portfolio/landing-page-2/landing-page-2';
 import ToDo from './Portfolio/to-do-app/to-do-app';
 
 export default (
-    <Route path="/" component={Header}>
+    <Route path="/" component={App}>
         <IndexRoute component={Home}/>   
         <Route path='contact' component={Contact}/> 
         <Route path='personalData' component={PersonalData}/> 

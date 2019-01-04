@@ -1,8 +1,9 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import './home.css';
 
-const Home = () => (    
-    <div className="container">
+const Home = (props) => (    
+    <div className={"container " + props.appWallpaper}>
         <div className="app-container">
             <div className="div-container1">
                 <div className="div1">
@@ -41,4 +42,10 @@ const Home = () => (
     </div>    
 );
 
-export default Home;
+const mapStateToProps = function (store) {
+    return {
+        appWallpaper: store.appReducer.appWallpaper,
+    };
+};
+
+export default connect(mapStateToProps)(Home);
