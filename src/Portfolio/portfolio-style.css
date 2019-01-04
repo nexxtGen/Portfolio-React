@@ -1,0 +1,25 @@
+.portfolio-container-pf { 
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: calc( 100vh - 50px );
+    max-height: calc( 100vh - 50px );
+    background-image: url("../images/bg3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    color: rgb(255, 255, 255);
+    overflow: auto; 
+}
+.content-container-pf {
+    max-width: 1050px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    margin: 0 auto; 
+    margin-top: 50px;   
+}
+.portfolio-button{
+    padding: 10px;
+    margin-right: 20px;
+}

@@ -1,8 +1,13 @@
 import React from 'react';
+import './contact.css';
 
 const Contact = () => (
-    <h1>
-        Ulica: Wrocławska 99
-    </h1>
+    <div className="contact-container-con">
+        <div className="content-container-con">
+            <h1>
+                Ulica: Wrocławska 99
+            </h1>            
+        </div>
+    </div>
 );
 export default Contact;

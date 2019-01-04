@@ -1,9 +1,0 @@
-.aaa1 {        
-    margin: 0;
-    padding: 0;        
-    overflow: scroll;
-    max-height: calc( 100vh - 50px );
-}
-.aaa2{
-    overflow: auto;
-}
