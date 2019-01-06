@@ -8,14 +8,26 @@
     overflow:auto;    
 }
 
-.background_1 {
+.background_1_app {
   background-image: url("../../images/bg1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;   
 }
-.background_3 {
+.background_2_app {
+  background-image: url("../../images/bg2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;   
+}
+.background_3_app {
   background-image: url("../../images/bg3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;   
+}
+.background_4_app {
+  background-image: url("../../images/bg4.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;   

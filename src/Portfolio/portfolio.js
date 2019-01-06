@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
+import { connect } from 'react-redux';
 import './portfolio-style.css';
 
 class Portfolio extends Component {
@@ -9,7 +10,7 @@ class Portfolio extends Component {
 
     render() {
         return (
-            <div className="portfolio-container-pf">   
+            <div className={"portfolio-container-pf " + this.props.appWallpaper}>   
                 <div className="content-container-pf">
                     <Link to="/portfolio/landing-1">
                         <button className="portfolio-button">LANDING 1111</button>
@@ -26,4 +27,10 @@ class Portfolio extends Component {
     }
 }
 
-export default Portfolio;
+const mapStateToProps = function (store) {
+    return {
+        appWallpaper: store.appReducer.appWallpaper,
+    };
+};
+
+export default connect(mapStateToProps)(Portfolio);

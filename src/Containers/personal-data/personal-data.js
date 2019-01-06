@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import "./personal-data.css";
 
 class PersonalData extends Component {
     constructor(props) {
-        super(props);
-        this.state = {
-            background1: 'background_1',
-            background3: 'background_3',  
-        };
+        super(props);        
     }     
 
     render() {
         return (
-            <div className={"container " + this.state.background3}>
+            <div className={"container " + this.props.appWallpaper}>
                 <div className="personal-container">
                     <h3>Test personal data</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
@@ -22,4 +19,10 @@ class PersonalData extends Component {
     }
 }
 
-export default PersonalData;
+const mapStateToProps = function (store) {
+    return {
+        appWallpaper: store.appReducer.appWallpaper,
+    };
+};
+
+export default connect(mapStateToProps)(PersonalData);

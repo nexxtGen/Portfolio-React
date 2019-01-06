@@ -6,6 +6,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.single-link-container:hover{
+    border-left: 1px solid rgb(133, 216, 39);
+    color: rgba(133, 216, 39);
+    transition: all 0.25s linear;
+}
+
+.single-link-container:hover .icon-text-span{
+    color: rgb(108, 158, 50); 
+    transition: all 0.25s linear;   
+}
+
 .navbar-container {    
     height: 50px;
     box-sizing: border-box;
@@ -100,15 +112,7 @@ button:active {
     padding-left: 7px;
     border-left: 1px solid rgb(0, 0, 0);
 }
-.single-link-container:hover{
-    border-left: 1px solid rgb(153, 245, 153);
-    color: rgb(125, 230, 165);
-    transition: all 0.25s linear;
-}
-.single-link-container:hover .icon-text-span{
-    color: rgb(65, 168, 105); 
-    transition: all 0.25s linear;   
-}
+
 .icon-container{
     width: 35%;    
     margin: 0;

@@ -5,7 +5,7 @@ import { leftPanelShow, rightPanelShow, } from '../Actions/actions-app';
 //Import styles
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
-import './header.css';
+import './App.css';
 //Font awesome
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

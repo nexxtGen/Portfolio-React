@@ -8,7 +8,7 @@ import {
     leftPanelShowState: true,
     rightPanelShowState: true,
     appTheme: 'app_theme_1',
-    appWallpaper: 'background_1',
+    appWallpaper: 'background_1_app',
 };
 
 const appReducer = function (state = initialState, action) {

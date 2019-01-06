@@ -1,0 +1,15 @@
+.not-found-container { 
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: calc( 100vh - 50px );
+    max-height: calc( 100vh - 50px );   
+    color: rgb(255, 255, 255);
+    overflow: auto; 
+}
+
+.not-found-content-container {
+    text-align: center;
+    margin: 150px auto;
+    
+}
