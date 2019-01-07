@@ -30,7 +30,7 @@ class FieldPersonal extends Component {
                 <div className="fp-icon-container">                
                     <a href="https://github.com/nexxtGen" target="_blank"><FontAwesomeIcon className="fp-icon" icon={faGithubSquare} /></a>
                     <a href="https://www.linkedin.com/in/kamil-s-764777177/" target="_blank"><FontAwesomeIcon className="fp-icon" icon={faLinkedin} /></a>
-                    <a href="https://drive.google.com/file/d/1hqacRKmw-EHyId6uPVsmBIhxY5UtOG0J/view" target="_blank"><FontAwesomeIcon className="fp-icon" icon={faUserGraduate} /></a>
+                    <a href="#" target="_blank"><FontAwesomeIcon className="fp-icon" icon={faUserGraduate} /></a>
                     <Link to="/personalData" className="fp-link-to-personal-data"><button className="fp-button">Personal data</button></Link>
                 </div>
                 <div className="fp-divided-line">                   
