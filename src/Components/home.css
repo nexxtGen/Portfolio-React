@@ -48,7 +48,7 @@
     margin: 0 auto;    
 }
 .div-container1 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lato', sans-serif;
     width: 100%;   
     margin-top: 70px; 
 }
@@ -62,7 +62,7 @@
 .div1-home-p{
     opacity: 0;
     animation: fade-in-right ease 1s forwards;    
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 35px;  
     border-bottom: 1px solid rgba(255, 255, 255, 0.6);  
@@ -70,7 +70,9 @@
 .div1-home-span{
     color: rgba(255, 255, 255, 0.5);    
 }
-.home-welcome-text-journey {    
+.home-welcome-text-journey {  
+    font-family: 'Lato', sans-serif;  
+    font-size: 15px;
     opacity: 0; 
     animation: fade-in-right ease 1s forwards;   
     animation-delay: 0.5s; 
