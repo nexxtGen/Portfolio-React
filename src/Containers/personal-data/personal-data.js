@@ -1,12 +1,26 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import myPhoto from '../../images/myPhoto.jpg';
+import StrongPersonal from './components/strong-personal';
+import WeakPersonal from './components/weak-personal';
 import "./personal-data.css";
 
 class PersonalData extends Component {
     constructor(props) {
-        super(props);        
+        super(props);
+        this.state = {
+            strongWeak: 'strong',
+        }              
     }     
+
+    handlerStrong()  {
+        console.log('strongWeak:' , this.state.strongWeak);
+        return this.setState({ strongWeak: 'strong'});
+    }
+    handlerWeak() {
+        console.log('strongWeak:' , this.state.strongWeak);
+        return this.setState({ strongWeak: 'weak'});        
+    }    
 
     render() {
         return (
@@ -33,33 +47,25 @@ class PersonalData extends Component {
                         </div>
                     </div>
                     <div className="row-personal-data">
-                        <div className="column-data-50">                            
+                        <div className="column-data-30">                            
                             <div className="personal-second-row-first-column">   
                                 <div className="strong-weak-handler-container">
-                                    <button>Silne strony</button>
-                                    <button>Słabe strony</button>
+                                    <button onClick={() =>this.handlerStrong()}>Silne strony</button>
+                                    <button onClick={() => this.handlerWeak()}>Słabe strony</button>
                                 </div>
-                                <div className="strong-weak">
-                                    <div className="sr-fc-lc">
-                                        <p>Silne strony</p>
-                                    </div>
-                                    <div className="sr-fc-rc">
-                                        <p>Kreatywność</p>
-                                        <p>Duża samodzielność przy rozwiązywaniu problemów z kodem</p>
-                                        <p>Adaptacja</p>
-                                        <p>Odpowiedzialnosć za swoje działania</p>
-                                        <p>Ugodowość</p>
-                                        <p>Otwartość</p>
-                                        <p>Umiejętnosć przyznawania się do własnych błędów</p>
-                                        <p>Wysoka empatia</p>
-                                        <p>Ambicja</p>
-                                    </div>
-                                </div>                                                             
+                                { this.state.strongWeak === 'strong' ? <StrongPersonal/> : <WeakPersonal/> }
                             </div>
                         </div>
-                        <div className="column-data-50">
+                        <div className="column-data-70">
                            <div className="personal-second-row-second-column">
-
+                                <div className="personal-second-row-first-column">   
+                                    <div className="personal-skills-buttons">
+                                        <button onClick={() =>this.handlerStrong()}>Umiejętności</button>
+                                        <button onClick={() => this.handlerWeak()}>Pozostałe umiejętnosci</button>
+                                        <button onClick={() => this.handlerWeak()}>Zainteresowania</button>
+                                    </div>
+                                    { this.state.strongWeak === 'strong' ? <StrongPersonal/> : <WeakPersonal/> }
+                                </div>                                
                            </div>
                         </div>
                     </div>

@@ -56,7 +56,14 @@
 .fp-icon-container p {
     margin-bottom: 0;
 }
+.fp-icon-container a {
+    color: rgba(133, 216, 39, 0.8);
+}
+.fp-icon-container a:hover {
+    color: rgba(177, 255, 88, 0.8);
+}
 .fp-button {
+    color: white;
     background: none;
     margin-left: 15px;
     outline: none;

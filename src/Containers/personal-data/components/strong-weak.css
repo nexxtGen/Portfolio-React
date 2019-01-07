@@ -1,0 +1,24 @@
+.strong-weak {
+    display: flex;
+    flex-direction: row;    
+    box-sizing: border-box;
+    overflow: auto;
+    padding: 15px;
+    margin: 0;
+    width: 263px; 
+  }
+  .personal-second-row-first-column:hover {
+    transition: 0.2s linear;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+  }
+  
+  .sr-fc-lc {
+    border-right: 1px solid white;
+    width: 37%;
+  }
+  .sr-fc-rc {
+    width: 63%;
+  }
+  .sr-fc-rc p {
+    padding-left: 8px;
+  }
