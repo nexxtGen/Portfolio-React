@@ -6,7 +6,7 @@
 .landing-page-1-container h1 { font-weight: bold; }
 .landing-page-1-container a { text-decoration: none; -webkit-transition: 0.5s ease; }
 .landing-page-1-container { height: calc( 100vh - 50px ); max-height: calc( 100vh - 50px ); }
-a:hover { color: #222222; text-decoration: underline; }
+
 
 ul { margin: 0; padding: 0; }
 

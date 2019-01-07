@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import myPhoto from '../../images/myPhoto.jpg';
 import "./personal-data.css";
 
 class PersonalData extends Component {
@@ -10,9 +11,25 @@ class PersonalData extends Component {
     render() {
         return (
             <div className={"container " + this.props.appWallpaper}>
-                <div className="personal-container">
-                    <h3>Test personal data</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <div className="app-container">
+                    <div className="welcome-in-portfolio">
+                        <p className="div1-home-p">informaje <span className="div1-home-span">o mnie</span></p>                                            
+                        <div className="field-personal-container animation-in">                        
+                            <div className="first-module-container">
+                                <div>
+                                    <img className="my-photo" src={myPhoto}></img>
+                                </div>
+                                <div className="kamil-data-container">
+                                    <div className="kamil-data">
+                                        <p>Name: Kamil</p>
+                                        <p>Surname: Sz</p>
+                                        <p>Profession: Web Developer</p>
+                                        <p>Target: Fullstack JS</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         );
