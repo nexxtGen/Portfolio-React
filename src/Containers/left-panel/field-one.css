@@ -3,14 +3,29 @@
 .field-container{
     box-sizing: border-box;
     margin: 5px 15px;
-    padding: 10px 15px 5px 15px; 
-    background: rgba(0, 0, 0, 0.2)
+    padding: 0; 
+    background: rgba(0, 0, 0, 0.2);
+    overflow: auto;
+    height: 250px;
 }
-.text {
-    font-size: 12px;
-    font-family: 'Montserrat', sans-serif;    
+.field-rss-title {
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
 }
-.text2 {
-    font-size: 12px;
-    font-family: 'Open Sans Condensed', sans-serif;    
+.rss-title-h4 {
+    margin: 0;
+    padding: 10px 10px 10px 15px;
+}
+.rss-article-container {    
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.rss-article-container p {
+    margin-bottom: 4px;
+}
+.rss-articles-container { 
+
+    margin: 10px 10px 10px 25px;
 }

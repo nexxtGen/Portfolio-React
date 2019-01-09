@@ -58,5 +58,15 @@
       "image": "/images-public/paper_rock_scissors_min.jpg",
       "repo": "https://github.com/nexxtGen/scissors-rock-enchanced",
       "delay": 100
-    }          
+    },
+    {
+      "id": 7,
+      "title": "React Stopwatch",
+      "technology": "React, JS, CSS",
+      "link": "/portfolio/stopwatch",
+      "runEngine": "true",
+      "image": "/images-public/stopwatch_min.jpg",
+      "repo": "https://github.com/nexxtGen/React-stoper",
+      "delay": 100
+    }                    
   ]

@@ -9,17 +9,22 @@ class Portfolio extends Component {
         super(props);
         this.state = {
             data: [],
-            delay: 300          
+            delay: 200          
         }
     }  
     
     componentDidMount() {
-        const data = portfolioData;
+        const data = [].concat(portfolioData);
         const delay = this.state.delay;
-        this.interval = setInterval(() => {
+        this.portfolio_interval = setInterval(() => {
           this.setState(prev => ({ data: prev.data.concat(data.shift()) }));
-          if(!data.length) clearInterval(this.interval);
+          if(!data.length) clearInterval(this.portfolio_interval);
         }, delay);
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.portfolio_interval);
+        this.setState({ data: [] });
     }
     
     render() {
@@ -40,12 +45,7 @@ class Portfolio extends Component {
                 </div>             
             </div>
         );
-    }    
-
-    componentWillUnmount() {
-        clearInterval(this.interval);
-        this.setState({data: []});
-    }
+    } 
 }
 
 const mapStateToProps = function (store) {

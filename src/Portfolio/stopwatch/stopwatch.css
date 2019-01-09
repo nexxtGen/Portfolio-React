@@ -1,0 +1,62 @@
+.stopwatch-app-container { 
+    background: url('../../images/bg1.jpg') no-repeat;
+    background-size: cover; 
+    background-position: center;
+    width:100%;
+    height: calc(100vh - 50px);
+    overflow: auto;    
+}
+
+.stopwatch-app-container-2 {
+    color: white;
+    padding: 10px;
+    width: 350px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 130px auto 30px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.stopwatch-container {     
+    border: 1px solid white;
+    padding: 10px;    
+    text-align: center;
+
+}
+.stopwatch-format {
+    font-size: 24px;
+    border-bottom: 1px solid white;
+    margin: 0 20px;;
+}
+.results-stopwatch {
+    font-size: 16px;
+}
+.stopwatch-title {    
+    padding-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;  
+    border-bottom: 1px solid white;  
+}
+.button-stopwatch {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 15px 2px;
+    min-width: 70px;
+}
+
+.timer-list-stopwatch {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0;
+    padding-bottom: 7px;
+    margin: 15px 50px 5px;
+    border-bottom: 1px solid white;
+}
+.stopwatch-list-container {
+    min-height: 300px;
+    margin-top: 5px;
+    border: 1px solid white;
+    text-align: center;
+}
+.item-container-stopwatch {  
+    text-align: left;  
+    margin: 10px auto;
+    max-width: 120px;
+    font-size: 18px;
+}

@@ -17,7 +17,7 @@ class Clock extends Component{
   
   componentDidMount () {
   	this.loadInterval = setInterval(
-      this.getTime, 1000
+      this.getTime, 500
     );
   }
   

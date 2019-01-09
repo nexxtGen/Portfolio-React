@@ -11,6 +11,7 @@ import Portfolio from './Portfolio/portfolio';
 import Landing1 from './Portfolio/landing-page-1/landing-page-1';
 import Landing2 from './Portfolio/landing-page-2/landing-page-2';
 import ToDo from './Portfolio/to-do-app/to-do-app';
+import Stopwatch from './Portfolio/stopwatch/stopwatch';
 
 export default (
     <Route path="/" component={App}>
@@ -21,7 +22,8 @@ export default (
             <IndexRoute component={Portfolio}/>
             <Route path='landing-1' component={Landing1}/>
             <Route path='landing-2' component={Landing2}/>
-            <Route path='toDo' component={ToDo}/>       
+            <Route path='toDo' component={ToDo}/>
+            <Route path='stopwatch' component={Stopwatch}/>       
         </Route>
         <Route path='*' component={NotFound}/>
     </Route>
