@@ -8,8 +8,7 @@ class FieldOne extends Component {
         rss: [],
         title: '',   
         link: ''     
-      }
-            
+      }            
     }    
     
     fetchDataFromRssFeed() {     
