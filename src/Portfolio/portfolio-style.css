@@ -12,11 +12,16 @@
     max-width: 1050px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;  
+    justify-content: center;  
     margin: 0 auto; 
     margin-top: 50px;   
 }
 .portfolio-button{
     padding: 10px;
     margin-right: 20px;
+}
+/* Portfolio tile*/
+.project-tile-container-pf {
+
 }

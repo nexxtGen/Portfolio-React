@@ -19,7 +19,11 @@ class Portfolio extends Component {
                     { this.state.data.map( portfolioElem => {
                         return <TileContainer
                                 key={portfolioElem.id}
+                                title={portfolioElem.title}
+                                runEngine={portfolioElem.runEngine}
+                                technology={portfolioElem.technology}
                                 image={portfolioElem.image}
+                                link={portfolioElem.link}
                         />
                     })}  
                 </div>             
