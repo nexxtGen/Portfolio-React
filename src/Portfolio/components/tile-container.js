@@ -23,7 +23,7 @@ const TileContainer = (props) => (
             }                  
         </div>
         <div className="tile-section-4-pf">
-            <button className="tile-section-4-pf-button">Git Repository</button>
+            <a href={props.repo} target="_blank"><button className="tile-section-4-pf-button">Git Repository</button></a>
         </div>
     </div>
 );

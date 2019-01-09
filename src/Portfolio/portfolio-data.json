@@ -5,7 +5,9 @@
       "technology": "Html, Sass, BEM+ITCSS",
       "link": "/portfolio/landing-1",
       "runEngine": "true",
-      "image": "/images-public/landing_1_min.jpg"
+      "image": "/images-public/landing_1_min.jpg",
+      "repo": "https://github.com/nexxtGen/Landing-page-3",
+      "delay": 100
     },
     {
       "id": 2,
@@ -13,7 +15,9 @@
       "technology": "Html, Sass, JS, BEM+ITCSS",
       "link": "/portfolio/landing-2",
       "runEngine": "true",
-      "image": "/images-public/landing_2_min.jpg"
+      "image": "/images-public/landing_2_min.jpg",
+      "repo": "https://github.com/nexxtGen/Landing-Page-5",
+      "delay": 200
     },
     {
       "id": 3,
@@ -21,7 +25,9 @@
       "technology": "React, JS, CSS",
       "link": "/portfolio/toDo",
       "runEngine": "true",
-      "image": "/images-public/todo_min.jpg"
+      "image": "/images-public/todo_min.jpg",
+      "repo": "https://github.com/nexxtGen/To-Do-App",
+      "delay": 300
     },
     {
       "id": 4,
@@ -29,7 +35,9 @@
       "technology": "Html, CSS, JS",
       "link": "https://nexxtgen.github.io/JS-kanban-API/",
       "runEngine": "false",
-      "image": "/images-public/kanban_api_min.jpg"
+      "image": "/images-public/kanban_api_min.jpg",
+      "repo": "https://github.com/nexxtGen/JS-kanban-API",
+      "delay": 400
     },
     {
       "id": 5,
@@ -37,7 +45,9 @@
       "technology": "JS, Html, CSS",
       "link": "https://nexxtgen.github.io/12-6-country-search-app/",
       "runEngine": "false",
-      "image": "/images-public/search_country_js_min.jpg"
+      "image": "/images-public/search_country_js_min.jpg",
+      "repo": "https://github.com/nexxtGen/12-6-country-search-app",
+      "delay": 500
     },
     {
       "id": 6,
@@ -45,6 +55,8 @@
       "technology": "JS, Html, CSS",
       "link": "https://nexxtgen.github.io/scissors-rock-enchanced/",
       "runEngine": "false",
-      "image": "/images-public/paper_rock_scissors_min.jpg"
+      "image": "/images-public/paper_rock_scissors_min.jpg",
+      "repo": "https://github.com/nexxtGen/scissors-rock-enchanced",
+      "delay": 100
     }          
   ]

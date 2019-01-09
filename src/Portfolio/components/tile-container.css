@@ -1,12 +1,14 @@
 .project-tile-container-pf {
+    opacity: 0;
     width: 250px;
     height: 340px;
     background: rgba(0, 0, 0, 0.5);
     margin: 5px;
-    transition: 0.3s linear;
+    transition: 4s linear;
     margin-bottom: 30px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    animation: fade-in-right ease 2s forwards;  
 }
 .project-tile-container-pf:hover {
     transform: scale(1.01);
@@ -67,11 +69,13 @@
     border-left: 20px solid rgb(255, 255, 255);
     transform: rotate(-135deg);
 }
+
 .tile-section-4-pf {
     display: flex;
     align-items: flex-end;
     width: 100%;    
 }
+
 .tile-section-4-pf-button {
     background: rgba(228, 228, 228, 0.9);
     margin-top: 42px;
@@ -80,9 +84,16 @@
     border: none;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    width: 100%;
+    width: 250px;
+}
+.tile-section-4-pf-button:focus {
+    outline: 0;
 }
 .tile-section-4-pf-button:hover {
     color: rgb(35, 194, 30);
+}
+
+.git-repo-link {
+    width: 250px;
 }
   

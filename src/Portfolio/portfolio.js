@@ -8,27 +8,43 @@ class Portfolio extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: portfolioData
+            data: [],
+            delay: 300          
         }
-    }     
-
+    }  
+    
+    componentDidMount() {
+        const data = portfolioData;
+        const delay = this.state.delay;
+        this.interval = setInterval(() => {
+          this.setState(prev => ({ data: prev.data.concat(data.shift()) }));
+          if(!data.length) clearInterval(this.interval);
+        }, delay);
+    }
+    
     render() {
         return (
             <div className={"portfolio-container-pf " + this.props.appWallpaper}>   
                 <div className="content-container-pf">
-                    { this.state.data.map( portfolioElem => {
-                        return <TileContainer
+                    {  this.state.data.map( portfolioElem => {                        
+                        return <TileContainer                                
                                 key={portfolioElem.id}
                                 title={portfolioElem.title}
                                 runEngine={portfolioElem.runEngine}
                                 technology={portfolioElem.technology}
                                 image={portfolioElem.image}
                                 link={portfolioElem.link}
+                                repo={portfolioElem.repo}
                         />
                     })}  
                 </div>             
             </div>
         );
+    }    
+
+    componentWillUnmount() {
+        clearInterval(this.interval);
+        this.setState({data: []});
     }
 }
 
@@ -39,14 +55,3 @@ const mapStateToProps = function (store) {
 };
 
 export default connect(mapStateToProps)(Portfolio);
-/*
-                    <Link to="/portfolio/landing-1">
-                        <button className="portfolio-button">LANDING 1111</button>
-                    </Link>
-                    <Link to="/portfolio/landing-2">
-                        <button className="portfolio-button">LANDING 222</button>
-                    </Link>
-                    <Link to="/portfolio/toDo">
-                        <button className="portfolio-button">ToDo React</button>
-                    </Link>
-*/
