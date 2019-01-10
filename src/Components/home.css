@@ -60,6 +60,16 @@
     padding: 10px 10px 10px 30px;  
 }
 .div1-home-p{
+    color: rgba(255, 255, 255, 0.6); 
+    opacity: 0;
+    animation: fade-in-right ease 1s forwards;    
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 35px;  
+    
+}
+.div1-home-p-border{    
+    color: rgba(255, 255, 255, 0.6); 
     opacity: 0;
     animation: fade-in-right ease 1s forwards;    
     font-family: 'Lato', sans-serif;
@@ -67,12 +77,18 @@
     font-size: 35px;  
     border-bottom: 1px solid rgba(255, 255, 255, 0.6);  
 }
+.margin-bottom-p-home{
+    margin-bottom: 0px;
+}
 .div1-home-span{
-    color: rgba(255, 255, 255, 0.5);    
+    color: rgb(255, 255, 255);    
+}
+.div1-home-span-green{
+    color: rgb(140, 255, 74);    
 }
 .home-welcome-text-journey {  
-    font-family: 'Lato', sans-serif;  
-    font-size: 15px;
+    font-family: 'Roboto', sans-serif;  
+    font-size: 16px;
     opacity: 0; 
     animation: fade-in-right ease 1s forwards;   
     animation-delay: 0.5s; 
