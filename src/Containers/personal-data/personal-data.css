@@ -114,6 +114,10 @@
   margin-bottom: 5px;
   height: 30px;
 }
+.strong-weak-handler-container .personal-button-active, .personal-skills-buttons .personal-button-active  {
+  background-color: rgba(116, 212, 51, 0.7);
+}
+
 .strong-weak-handler-container button:active {
   border: none;
 }
@@ -131,9 +135,9 @@
   flex-direction: column;  
   margin-bottom: 0;
   padding-bottom: 0;
-  background: rgba(0, 0, 0, 0.3); 
-  animation-delay: 2s;
-  animation: fade-in-right ease 2s forwards;  
+  background: rgba(0, 0, 0, 0.3);   
+  animation: fade-in-right ease 0.9s forwards; 
+  animation-delay: 0.9s; 
 }
 
 .personal-skills-buttons button {

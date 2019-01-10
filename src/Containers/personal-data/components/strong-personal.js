@@ -4,18 +4,19 @@ import './strong-weak.css';
 const StrongPersonal = () => (    
     <div className="strong-weak">
         <div className="sr-fc-lc">
-            <p>Silne strony</p>
+            <p>Strong sides</p>
         </div>
         <div className="sr-fc-rc">
-            <p>Kreatywność</p>
-            <p>Duża samodzielność przy rozwiązywaniu problemów z kodem</p>
-            <p>Adaptacja</p>
-            <p>Odpowiedzialnosć za swoje działania</p>
-            <p>Ugodowość</p>
-            <p>Otwartość</p>
-            <p>Umiejętnosć przyznawania się do własnych błędów</p>
-            <p>Wysoka empatia</p>
-            <p>Ambicja</p>
+            <p>Creativity</p>
+            <p>The large self-reliance in solving problems with the code</p>
+            <p>Adaptation</p>
+            <p>Fast learning</p>
+            <p>Responsibility for your actions</p>
+            <p>Amicable</p>
+            <p>Openness</p>
+            <p>The ability to award their own mistakes</p>
+            <p>High empathy</p>
+            <p>Ambition</p>
         </div>
     </div>                          
 );

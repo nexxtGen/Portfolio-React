@@ -1,0 +1,23 @@
+.other-text-container {
+    width: 33.3%;
+    border-left: 1px solid white;
+    padding-left: 15px;
+    height: 268px;
+}
+.other-images-container {
+    max-height: 275px;
+    width: 66.7%;
+    padding:10px;
+    padding-left: 50px;
+    overflow: auto;
+}
+
+.other-images-container img {
+    width: 80px;    
+    height: 80px;
+    object-fit: cover;
+    margin-top: 30px;
+    margin-bottom: 0;
+    margin-right: 15px;
+    transition: 0.3s linear;
+}

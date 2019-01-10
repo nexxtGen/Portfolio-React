@@ -11,6 +11,7 @@
     width: 67.5%;
     padding:10px;
     padding-left: 50px;
+    padding-top: 0;
     overflow: auto;
 }
 .skills-images-container img {
@@ -30,5 +31,8 @@
     transition: 0.3s linear;
 }
 .skills-text-container {
-    width: 30%;
+    width: 32.3%;
+    padding-left: 10px;
+    height: 270px;
+    overflow: auto;
 }

@@ -32,7 +32,15 @@ const Skills = () => (
             <img src ={mern} />
         </div>
         <div className="skills-text-container">
-            <p>Text data </p>
+            <p>React- create user interfaces</p>
+            <p>Redux- control of the application state</p>
+            <p>HTML5- create a website structure</p>
+            <p>CSS+SASS- application styling</p>
+            <p>Javascript ES6 - basic programming language</p>
+            <p>AJAX- use + api</p>
+            <p>Node.js- coding on the backend side</p>
+            <p>Express- use framework</p>
+            <p>Work in progress...</p>
         </div>
     </div>                          
 );

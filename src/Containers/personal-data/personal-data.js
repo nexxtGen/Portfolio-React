@@ -59,8 +59,8 @@ class PersonalData extends Component {
                         <div className="column-data-30">                            
                             <div className="personal-second-row-first-column">   
                                 <div className="strong-weak-handler-container">
-                                    <button onClick={() =>this.handlerStrong()}>Strong sides</button>
-                                    <button onClick={() => this.handlerWeak()}>Weak sides</button>
+                                    <button onClick={() =>this.handlerStrong()} className={ this.state.strongWeak === 'strong' ? "personal-button-active" : '' } >Strong sides</button>
+                                    <button onClick={() => this.handlerWeak()} className={ this.state.strongWeak === 'weak' ? "personal-button-active" : '' } >Weak sides</button>
                                 </div>
                                 { this.state.strongWeak === 'strong' ? <StrongPersonal/> : <WeakPersonal/> }
                             </div>
@@ -68,9 +68,9 @@ class PersonalData extends Component {
                         <div className="column-data-70">
                            <div className="personal-second-row-second-column">                                 
                                     <div className="personal-skills-buttons">
-                                        <button onClick={() =>this.handlerMoreInfo('skills')}>My Skills</button>
-                                        <button onClick={() => this.handlerMoreInfo('other')}>Other skills</button>
-                                        <button onClick={() => this.handlerMoreInfo('passions')}>Passions</button>
+                                        <button onClick={() =>this.handlerMoreInfo('skills')} className={ this.state.moreInfo === 'skills' ? "personal-button-active" : '' } >My Skills</button>
+                                        <button onClick={() => this.handlerMoreInfo('other')} className={ this.state.moreInfo === 'other' ? "personal-button-active" : '' } >Other skills</button>
+                                        <button onClick={() => this.handlerMoreInfo('passions')} className={ this.state.moreInfo === 'passions' ? "personal-button-active" : '' } >Passions</button>
                                     </div>
                                     <div>
                                         { this.state.moreInfo === 'skills' 

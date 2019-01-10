@@ -1,13 +1,23 @@
 import React from 'react';
 import './other.css';
+//import images
+import studio from '../../../images/logo/studio.png';
+import vray from '../../../images/logo/vray.png';
+import zbrush from '../../../images/logo/zbrush.png';
+import photoshop from '../../../images/logo/photoshop.png';
+import ae from '../../../images/logo/ae.png';
 
 const Other = () => (    
-    <div className="strong-weak">
-        <div className="sr-fc-lc">
-            <p>Other</p>
+    <div className="skills-container-sk">
+        <div className="other-images-container">
+            <img src ={studio} />
+            <img src ={vray} />
+            <img src ={zbrush} />
+            <img src ={photoshop} /> 
+            <img src ={ae} />             
         </div>
-        <div className="sr-fc-rc">
-            <p>Other</p>
+        <div className="other-text-container">
+            <p>Sorry... Work in progress</p>
         </div>
     </div>                          
 );
