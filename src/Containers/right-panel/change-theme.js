@@ -22,7 +22,7 @@ class ChangeTheme extends Component {
             <div className="field-personal-container-theme">
                 <div className="first-module-container-theme">                    
                     <div>
-                        <p>Change Theme</p>
+                        <p>Change Wallpaper</p>
                     </div>
                     <div className="theme-data-container">
                         <div className="theme-data">    

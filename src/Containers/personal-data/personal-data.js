@@ -3,6 +3,9 @@ import { connect } from 'react-redux';
 import myPhoto from '../../images/myPhoto.jpg';
 import StrongPersonal from './components/strong-personal';
 import WeakPersonal from './components/weak-personal';
+import Skills from './components/skills';
+import Other from './components/other';
+import Passions from './components/passions';
 import "./personal-data.css";
 
 class PersonalData extends Component {
@@ -10,6 +13,8 @@ class PersonalData extends Component {
         super(props);
         this.state = {
             strongWeak: 'strong',
+            moreInfo: 'skills'
+
         }              
     }     
 
@@ -17,18 +22,22 @@ class PersonalData extends Component {
         console.log('strongWeak:' , this.state.strongWeak);
         return this.setState({ strongWeak: 'strong'});
     }
-    handlerWeak() {
-        console.log('strongWeak:' , this.state.strongWeak);
-        return this.setState({ strongWeak: 'weak'});        
-    }    
 
+    handlerWeak() {        
+        return this.setState({ strongWeak: 'weak'});        
+    }
+
+    handlerMoreInfo(infoValue) {       
+        return this.setState({ moreInfo: infoValue});        
+    }            
+    
     render() {
         return (
             <div className={"container " + this.props.appWallpaper}>
                 <div className="app-container direction-flex-column">
                     <div className="row-personal-data">
                         <div className="welcome-in-my-data">
-                            <p className="div1-home-p">informaje <span className="div1-home-span">o mnie</span></p>                                            
+                            <p className="div1-home-p p-underline-personal">Personal <span className="div1-home-span">data</span></p>                                            
                             <div className="field-personal-container animation-in">                        
                                 <div className="first-module-container">
                                     <div>
@@ -36,10 +45,10 @@ class PersonalData extends Component {
                                     </div>
                                     <div className="kamil-data-container">
                                         <div className="kamil-data">
-                                            <p>Imię: Kamil</p>
-                                            <p>Nazwisko: Sz</p>
-                                            <p>Profesja: Web Developer</p>
-                                            <p>Cel: Fullstack JS</p>
+                                            <p>Name: Kamil</p>
+                                            <p>Surname: Sz</p>
+                                            <p>Profession: Web Developer</p>
+                                            <p>Target: Fullstack JS</p>
                                         </div>
                                     </div>
                                 </div>
@@ -50,22 +59,28 @@ class PersonalData extends Component {
                         <div className="column-data-30">                            
                             <div className="personal-second-row-first-column">   
                                 <div className="strong-weak-handler-container">
-                                    <button onClick={() =>this.handlerStrong()}>Silne strony</button>
-                                    <button onClick={() => this.handlerWeak()}>Słabe strony</button>
+                                    <button onClick={() =>this.handlerStrong()}>Strong sides</button>
+                                    <button onClick={() => this.handlerWeak()}>Weak sides</button>
                                 </div>
                                 { this.state.strongWeak === 'strong' ? <StrongPersonal/> : <WeakPersonal/> }
                             </div>
                         </div>
                         <div className="column-data-70">
-                           <div className="personal-second-row-second-column">
-                                <div className="personal-second-row-first-column">   
+                           <div className="personal-second-row-second-column">                                 
                                     <div className="personal-skills-buttons">
-                                        <button onClick={() =>this.handlerStrong()}>Umiejętności</button>
-                                        <button onClick={() => this.handlerWeak()}>Pozostałe umiejętnosci</button>
-                                        <button onClick={() => this.handlerWeak()}>Zainteresowania</button>
+                                        <button onClick={() =>this.handlerMoreInfo('skills')}>My Skills</button>
+                                        <button onClick={() => this.handlerMoreInfo('other')}>Other skills</button>
+                                        <button onClick={() => this.handlerMoreInfo('passions')}>Passions</button>
                                     </div>
-                                    { this.state.strongWeak === 'strong' ? <StrongPersonal/> : <WeakPersonal/> }
-                                </div>                                
+                                    <div>
+                                        { this.state.moreInfo === 'skills' 
+                                           ? <Skills /> 
+                                           : ( this.state.moreInfo === 'other'
+                                            ? <Other/>
+                                                : <Passions />
+                                            )                                             
+                                        }
+                                    </div>                                                              
                            </div>
                         </div>
                     </div>

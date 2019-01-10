@@ -48,6 +48,9 @@
   max-width: 50%;
   margin-top: 80px;   
 }
+.p-underline-personal {
+  border-bottom: 1px solid white;
+}
 .row-personal-data{
   display: flex;
   flex-direction: row;
@@ -109,6 +112,7 @@
   border: none;
   border: 1px solid white;
   margin-bottom: 5px;
+  height: 30px;
 }
 .strong-weak-handler-container button:active {
   border: none;
@@ -118,12 +122,18 @@
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
 }
 /*ROW 2 column 2*/
+
 .personal-second-row-second-column {
+  opacity: 0;
   height: 310px;
-  width: 800px;
-  background: rgba(0, 0, 0, 0.3);
+  width: 800px;  
   display: flex;
   flex-direction: column;  
+  margin-bottom: 0;
+  padding-bottom: 0;
+  background: rgba(0, 0, 0, 0.3); 
+  animation-delay: 2s;
+  animation: fade-in-right ease 2s forwards;  
 }
 
 .personal-skills-buttons button {
@@ -132,4 +142,5 @@
   border: none;
   border: 1px solid white;
   margin-bottom: 5px;
+  height: 30px;
 }
