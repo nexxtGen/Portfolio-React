@@ -7,7 +7,7 @@ const Home = (props) => (
         <div className="app-container">
             <div className="div-container1">
                 <div className="div1-home">
-                    <p className="div1-home-p margin-bottom-p-home">Hello, I'm<span className="div1-home-span-green"> Kamil Sz</span></p>
+                    <p className="div1-home-p margin-bottom-p-home">Hello, I'm<span className="div1-home-span-green"> Kamil Szczypior</span></p>
                     <p className="div1-home-p-border">I'm <span className="div1-home-span"> front-end developer</span></p>
                     <p className="home-welcome-text-journey">I started the adventure as a front-end developer in the middle of 2018. My first step was to create simple static pages. 
                     Every day I got to know new technologies and opportunities offered by web design and programming. It has become my passion and the direction of my development. 

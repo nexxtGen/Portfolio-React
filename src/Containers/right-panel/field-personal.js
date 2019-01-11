@@ -22,7 +22,7 @@ class FieldPersonal extends Component {
                     <div className="kamil-data-container">
                         <div className="kamil-data">
                             <p>Name: Kamil</p>
-                            <p>Surname: Sz</p>
+                            <p>Surname: Szczypior</p>
                             <p>Profession: WebDev</p>
                         </div>
                     </div>
