@@ -17,7 +17,8 @@ const Other = () => (
             <img src ={ae} />             
         </div>
         <div className="other-text-container">
-            <p>Sorry... Work in progress</p>
+            <p>Creating photorealistic 3D visualizations, 3D modeling, advanced V-ray rendering, sculpting, character modeling, 3D animation.</p>
+            <a href="https://vimeo.com/125328994" target="_blank" className="demo-reel">My Character Modeling Reel on vimeo</a>
         </div>
     </div>                          
 );

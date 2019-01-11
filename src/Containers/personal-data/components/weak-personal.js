@@ -6,12 +6,11 @@ const WeakPersonal = () => (
         <div className="sr-fc-lc">
             <p>Słabe strony</p>
         </div>
-        <div className="sr-fc-rc">
-            <p>Podatnosć na rozproszenie uwagi</p>            
-            <p>Zorientowanie na jasno określone zasady i transparentność w kontaktach międzyludzkich</p>
-            <p>Zorientowanie na logikę i sensowność wypowiedzi innych osób</p>
-            <p>Niska tolerancja dla nieuczciwych zachowań ludzkich i stanowcza reakcja w tej kwestii</p>
-            <p>Bardzo specyficzne poczucie humoru :)</p>
+        <div className="sr-fc-rc">                   
+            <p>Orientation on clearly defined rules and transparency in interpersonal relations</p>
+            <p>Orientation to the logic and reasonableness of other people's statements</p>
+            <p>Low tolerance for dishonest behavior of human and firm response on this issue</p>
+            <p>A very specific sense of humor :)</p>
         </div>
     </div>                          
 );
