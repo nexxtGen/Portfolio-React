@@ -8,8 +8,7 @@ const WeakPersonal = () => (
         </div>
         <div className="sr-fc-rc">                   
             <p>Orientation on clearly defined rules and transparency in interpersonal relations</p>
-            <p>Orientation to the logic and reasonableness of other people's statements</p>
-            <p>Low tolerance for dishonest behavior of human and firm response on this issue</p>
+            <p>Orientation to the logic and reasonableness of other people's statements</p>            
             <p>A very specific sense of humor :)</p>
         </div>
     </div>                          
