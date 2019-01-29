@@ -4,6 +4,7 @@ import { Route, IndexRoute } from 'react-router';
 import App from './Containers/App';
 import Home from './Components/home';
 import Contact from './Components/contact';
+import Codewars from './Components/codewars';
 import PersonalData from './Containers/personal-data/personal-data';
 import NotFound from './Components/not-found';
 //Portfolio modules
@@ -17,7 +18,8 @@ export default (
     <Route path="/" component={App}>
         <IndexRoute component={Home}/>   
         <Route path='contact' component={Contact}/> 
-        <Route path='personalData' component={PersonalData}/> 
+        <Route path='personalData' component={PersonalData}/>
+        <Route path='codewars' component={Codewars}/> 
         <Route path='portfolio' >  
             <IndexRoute component={Portfolio}/>
             <Route path='landing-1' component={Landing1}/>
